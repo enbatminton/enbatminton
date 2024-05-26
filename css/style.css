@@ -92,7 +92,7 @@ section .navi{
 	font-size: 22px;
 	font-weight:normal;
 	text-align: center;
-	background: url(../images/borderBlack.png) repeat-x 0 50%;
+	background: url(../images/borderBlack.webp) repeat-x 0 50%;
 	background-size: 1px 1px;
 }
 

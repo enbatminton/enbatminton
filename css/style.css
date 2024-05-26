@@ -88,18 +88,18 @@ section{
 	padding-top: 70px;
 }
 
-section h2{
+section .navi{
 	font-family: 'Pacifico', cursive;
 	width: 60%;
 	margin: 0 auto 40px;
 	font-size: 22px;
 	font-weight:normal;
 	text-align: center;
-	background: url(../images/borderBlack.wepb) repeat-x 0 50%;
+	background: url(../images/borderBlack.png) repeat-x 0 50%;
 	background-size: 1px 1px;
 }
 
-section h2 span {
+section .navi span {
 	background: #fff;
 	padding: 0 80px;
 }
@@ -159,6 +159,7 @@ section h2 span {
 }
 
 .col3 .img{
+	padding: 80px 50px;
 	margin-bottom: 40px;
 	line-height: 0 !important;
 	background: #f6f6f6;

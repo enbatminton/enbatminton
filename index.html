@@ -17,7 +17,8 @@
     onload="this.removeAttribute('onload');this.removeAttribute('as');this.rel='stylesheet';">
   <link rel="preload" href="https://fonts.gstatic.com" as="style"
     onload="this.removeAttribute('onload');this.removeAttribute('as');this.rel='stylesheet';">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" /> >
   <!-- Google tag (gtag.js) -->
@@ -38,6 +39,7 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
 </head>
+
 <body id="top">
   <header id="header">
     <div id="headerWrap">
@@ -97,25 +99,26 @@
       <ul class="col5">
         <li>
           <img src="images/step01.webp" width="75" alt="step1" loading="lazy">
-          <h4>着替え</h4>
+          <div class="header">着替え</div>
           <p>まずは更衣室へ。準備ができたら体育館へ。</p>
         </li>
         <li>
           <img src="images/step02.webp" width="75" alt="step2" loading="lazy">
-          <h5>準備運動/ウォームアップ</h5>
+          <div class="header">準備運動/ウォームアップ</div>
           <p>各自怪我しないように、準備運動や練習</p>
         </li>
         <li>
           <img src="images/step03.webp" width="75" alt="step3" loading="lazy">
-          <h5>ダブルスゲーム</h5>
-          <p>わからない人向けにルール説明したあとにゲーム開始</p>
-        </li>
-        <li>
-          <img src="images/step04.webp" width="75" alt="step4" loading="lazy">
-          <h5>片付け・解散</h5>
-          <p>館内完全退出前に余裕もって20分前目処に</p>
-        </li>
-      </ul>
+          <div class="header"></div>ダブルスゲーム
+    </div>
+    <p>わからない人向けにルール説明したあとにゲーム開始</p>
+    </li>
+    <li>
+      <img src="images/step04.webp" width="75" alt="step4" loading="lazy">
+      <div class="header">片付け・解散</div>
+      <p>館内完全退出前に余裕もって20分前目処に</p>
+    </li>
+    </ul>
     </div>
   </section>
   <section id="schedule">

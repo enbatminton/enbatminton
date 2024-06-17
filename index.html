@@ -13,11 +13,13 @@
   <meta property="og:site_name" content="エンバド" />
   <meta property="og:description" content="新宿区初心者バドミントンサークル" />
   <title>エンバド | 新宿区バドミントンサークル</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com" as="style"
+    onload="this.removeAttribute('onload');this.removeAttribute('as');this.rel='stylesheet';">
+  <link rel="preload" href="https://fonts.gstatic.com" as="style"
+    onload="this.removeAttribute('onload');this.removeAttribute('as');this.rel='stylesheet';">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" media="all" href="css/style.css">
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" /> >
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16582608113"></script>
   <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16582608113'); </script>
@@ -151,10 +153,11 @@
   <section id="contanct">
     <header>
       <div class="navi">
-        <span>参加までの流れ</span>
+        <span>Flow</span>
       </div>
     </header>
     <div class="innerS">
+      <span class="contens">参加までの流れ</span>
       <ul class="flow1__lists">
         <li>
           <p class="flow1__listsStep">STEP 1</p>
@@ -237,4 +240,5 @@
   </section>
   <p id="page-top"><a href="#">TOP</a></p>
 </body>
+
 </html>

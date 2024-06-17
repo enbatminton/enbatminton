@@ -598,3 +598,62 @@ section .navi span {
 .red {
 	color: #ab101b;
 }
+
+.flow1__listsStep {
+    color: #007f80;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #f0f0f0;
+    font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+    .flow1__listsStep {
+        width: 115px;
+        white-space: normal;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flow1__listsTitle {
+        min-width: 240px;
+        display: table-cell;
+        background: #007f80;
+        color: #fff;
+        border-left: 5px solid #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        white-space: nowrap;
+        margin: 0;
+    }
+}
+.flow1__listsTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .flow1__lists li {
+        display: table;
+        width: 100%;
+        margin: 30px 0 0 0;
+        padding: 0 0 30px 0;
+        position: relative;
+    }
+}
+
+.flow1__lists li {
+    margin: 20px 0 0 0;
+}
+
+.flow1__lists a{
+	color: rgb(130, 190, 232);
+
+}

@@ -11049,3 +11049,8 @@ html {
 #title{
   padding-bottom: 25px;
 }
+
+#line-icon{
+  margin: 1px;
+  height: 40px;
+}

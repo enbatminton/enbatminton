@@ -765,6 +765,11 @@ button:not(:disabled),
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-menu {
+  --bs-bg-opacity: 1;
+  background-color: rgb(160, 216, 239);
+}
+
 .rounded {
   border-radius: var(--bs-border-radius) !important;
 }

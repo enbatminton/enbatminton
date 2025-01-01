@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
+  --bs-primary-rgb: 9, 88, 149;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -651,10 +651,10 @@ button:not(:disabled),
 } */
 
 .link-secondary {
-  color: #2c3e50 !important;
+  color: rgb(242, 253, 244) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #233240 !important;
+  color: rgb(252, 255, 158) !important;
 }
 
 .fixed-top {

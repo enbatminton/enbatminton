@@ -767,7 +767,7 @@ button:not(:disabled),
 
 .bg-menu {
   --bs-bg-opacity: 1;
-  background-color: rgb(160, 216, 239);
+  background-color: rgb(229, 31, 31);
 }
 
 .rounded {

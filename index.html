@@ -39,7 +39,7 @@
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
-          right: 'timeGridWeek,timeGridDay,listMonth'
+          right: 'timeGridDay,listMonth'
         },
         initialView: 'listWeek',
         locale: 'ja',
@@ -55,13 +55,6 @@
           {
             googleCalendarId: '前記事を参考に、カレンダーIDをここに入れる',
             className: 'my-events',
-          },
-          {
-            googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
-            className: 'ja-holidays',
-            textColor: 'red',
-            backgroundColor: '#ffffff00',
-            borderColor: '#ffffff00'
           }
         ],
         googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',

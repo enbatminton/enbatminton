@@ -34,7 +34,9 @@
     document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
+        initialView: 'listWeek',
+        locale: 'ja',
+        height: 'auto',
         events:'f8475db5c72e219adf03261b9b786943b32deb91365c02e709c380e1e7977131@group.calendar.google.com',
         googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',
         eventClick: function(info) {

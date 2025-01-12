@@ -1013,3 +1013,7 @@ iframe.youtube-16-9 {
   text-align: left;
   text-decoration:none;
 }
+
+.fc-daygrid-day:has(.ja-holidays){
+	background-color: green;
+}

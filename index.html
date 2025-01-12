@@ -35,18 +35,40 @@
   <script defer src="https://unpkg.com/tippy.js@6"></script>
   <script defer src='./js/google-calendar/index.global.min.js'></script>
   <script defer>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
+        headerToolbar: {
+          right: 'timeGridWeek,timeGridDay,listMonth'
+        },
         initialView: 'listWeek',
         locale: 'ja',
         height: 'auto',
-        events:'f8475db5c72e219adf03261b9b786943b32deb91365c02e709c380e1e7977131@group.calendar.google.com',
+        events: {
+          googleCalendarId: "f8475db5c72e219adf03261b9b786943b32deb91365c02e709c380e1e7977131@group.calendar.google.com",
+          className: 'my-events',
+          textColor: 'red',
+          backgroundColor: '#ffffff00',
+          borderColor: '#ffffff00'
+        },
+        eventSources: [
+          {
+            googleCalendarId: '前記事を参考に、カレンダーIDをここに入れる',
+            className: 'my-events',
+          },
+          {
+            googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
+            className: 'ja-holidays',
+            textColor: 'red',
+            backgroundColor: '#ffffff00',
+            borderColor: '#ffffff00'
+          }
+        ],
         googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',
-        eventClick: function(info) {
+        eventClick: function (info) {
           info.jsEvent.preventDefault();
         },
-        eventDidMount: (e)=>{
+        eventDidMount: (e) => {
           tippy(e.el, {
             content: e.event.title,
           });
@@ -79,6 +101,7 @@
     gtag('config', 'G-B0B76S4HVF');
   </script>
 </head>
+
 <body id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -136,14 +159,18 @@
       <p>レベルは、初心者から経験者から幅広いですが、初心者が多めです。</p>
       <p>男女比は、6:4くらいで男性が若干多めのときが多い印象です。</p>
       <p>開催日程告知用の公式LINEも用意しています。</p>
-      <a href="https://lin.ee/qPQZFcK" ><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" width="116" border="0"></a>
+      <a href="https://lin.ee/qPQZFcK"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加"
+          height="36" width="116" border="0"></a>
     </div>
   </header>
   <section class="masthead page-section howtojoin" id="howtojoin">
     <div class="container">
       <h2 class="page-section-heading text-center text-uppercase subtitle">参加登録の方法</h2>
       <div class="text-center">
-        <iframe class="youtube-16-9" src="https://www.youtube.com/embed/6vQZHTgaRMA?si=gwhOwFOXLEa4iuis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="youtube-16-9" src="https://www.youtube.com/embed/6vQZHTgaRMA?si=gwhOwFOXLEa4iuis"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="divider-custom divider-light"></div>
       </div>
       <h2 class="page-section-heading text-center text-uppercase subtitle">当日の流れ</h2>
@@ -154,7 +181,8 @@
           </div>
           <div class="col-lg-4 me-auto">
             <p class="lead">BANDのアプリ(URL:<a target="_blank" rel="nofollow"
-                href="https://band.us/n/a5adAcA8K5Aak">https://band.us/n/a5adAcA8K5Aak</a>)で参加したい・都合あう日程を登録済みであることをチェック</p>
+                href="https://band.us/n/a5adAcA8K5Aak">https://band.us/n/a5adAcA8K5Aak</a>)で参加したい・都合あう日程を登録済みであることをチェック
+            </p>
           </div>
         </div>
         <div class="row">

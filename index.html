@@ -22,9 +22,24 @@
       "telephone": "no number",
       "email": "enbatminton@gmail.com",
       "datePublished": "2024-12-08T08:00:00+08:00",
-      "dateModified": "2025-01-11T08:45:20+09:00",
+      "dateModified": "2025-01-12T11:45:20+09:00",
       "description": "東京(新宿区、練馬区、板橋区)でバドミントンしたい方募集。初心者から経験者まで幅広いレベルの方が、バドミントンのゲームを楽しんでいます。"
     }
+  </script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events:'enbatminton@gmail.com',
+        googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',
+        eventTimeFormat: { hour: 'numeric', minute: '2-digit' },
+      });
+      calendar.render();
+    });
   </script>
   <meta name="description" content="東京(新宿区、練馬区、板橋区)でバドミントンしたい方募集。初心者から経験者まで幅広いレベルの方が、バドミントンのゲームを楽しんでいます。">
   <meta name="google-site-verification" content="GRAY9tdEige03JNzi4CE8mKCAij14ihMQVXCb8XZ8Cs" />
@@ -179,7 +194,7 @@
         <div class="col-lg-12 ms-auto text-center">
           <p class="lead">以下日程を予定しています。参加人数把握したため、アプリで参加登録をお願いします。また体育館の都合でキャンセルすることもあります。</p>
         </div>
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&showTabs=0&showCalendars=0&showTz=0&title=%E3%82%A8%E3%83%B3%E3%83%90%E3%83%89%E3%80%80%E9%96%8B%E5%82%AC%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&src=ZW5iYXRtaW50b25AZ21haWwuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" title="エンバド開催スケジュール"></iframe>
+        <div id='calendar'></div>
       </div>
     </div>
     <hr>
@@ -257,8 +272,17 @@
         <div class="col-lg-7 col-xl-8">
           <div class="row mt-3">
             <time class="col-lg-2 ms-auto publish-date">
-              2025/01/11
+              2025/01/12
             </time>
+            <br />
+            <div class="col-lg-6 ms-auto">
+              Google Calendar導入
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-2 ms-auto publish-date">
+              2025/01/11
+            </div>
             <br />
             <div class="col-lg-6 ms-auto">
               開催箇所追加

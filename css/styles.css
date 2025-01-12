@@ -988,14 +988,17 @@ html {
 
 .fc-day-other {
   color: #6C676E;
+  background-color: #0d6efd;
 }
 
 .fc-day-sat {
   color: #50c2dc;
+  background-color: #0d6efd;
 }
 
 .fc-day-sun {
   color: #ee2e37;
+  background-color: #0d6efd;
 }
 
 .fc-list-day-cushion{

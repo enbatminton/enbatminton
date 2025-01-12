@@ -37,6 +37,11 @@
         initialView: 'dayGridMonth',
         events:'f8475db5c72e219adf03261b9b786943b32deb91365c02e709c380e1e7977131@group.calendar.google.com',
         googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',
+        eventDidMount: (e)=>{
+          tippy(e.el, {
+            content: e.event.title,
+          });
+        },
         eventTimeFormat: { hour: 'numeric', minute: '2-digit' }
       });
       calendar.render();

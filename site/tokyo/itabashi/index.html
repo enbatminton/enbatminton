@@ -34,7 +34,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'listMonth',
+        initialView: 'dayGridMonth',
         locale: 'ja',
         height: 'auto',
         events:'1b1f16813c35340bc4cb9e245f7f2dff3d5d505f9992a2b3b34e41f3a552d265@group.calendar.google.com',
@@ -91,7 +91,7 @@
       <div class="divider-custom divider-light"></div>
       <div class="row">
         <div class="col-lg-12 ms-auto text-center">
-          <p class="lead">以下日程を予定しています。参加人数把握したため、アプリで参加登録をお願いします。また体育館の都合でキャンセルすることもあります。</p>
+          <h3 class="divider-left"><time>2025-01-12</time>....スケジュール最新化</h3>
         </div>
         <div id='calendar'></div>
       </div>

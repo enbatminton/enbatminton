@@ -1014,6 +1014,7 @@ iframe.youtube-16-9 {
   text-decoration:none;
 }
 
-.fc-daygrid-day:has(.ja-holidays){
-	background-color: green;
+.fc-other-month {
+  pointer-events: none;
+  cursor: default;
 }

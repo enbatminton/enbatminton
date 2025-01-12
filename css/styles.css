@@ -998,6 +998,6 @@ html {
   color: #ee2e37;
 }
 
-#calendar > div.fc-view-harness.fc-view-harness-passive > div > table > thead{
-  background: black;
+.fc-list-day-cushion{
+  background-color: #0d6efd;
 }

@@ -51,11 +51,6 @@
         eventClick: function (info) {
           info.jsEvent.preventDefault();
         },
-        eventDidMount: (e) => {
-          tippy(e.el, {
-            content: e.event.title,
-          });
-        },
         eventTimeFormat: { hour: 'numeric', minute: '2-digit' }
       });
       calendar.render();

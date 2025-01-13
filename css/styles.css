@@ -1019,3 +1019,7 @@ iframe.youtube-16-9 {
   pointer-events: none;
   cursor: default;
 }
+
+.fc .fc-list-event:hover td{
+  background-color: #dc3545 ;
+}

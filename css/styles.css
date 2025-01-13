@@ -984,6 +984,7 @@ html {
 
 .subtitle {
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .fc-day-other {
@@ -999,7 +1000,7 @@ html {
 }
 
 .fc-theme-standard .fc-list-day-cushion{
-  background-color: #044ebd;
+  background-color: #044ebd ;
 }
 
 iframe.youtube-16-9 {

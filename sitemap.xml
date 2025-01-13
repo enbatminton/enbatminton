@@ -7,33 +7,38 @@
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 <url>
-  <loc>https://www.enbatminton.com/site/tokyo/shinjuku/</loc>
+  <loc>https://www.enbatminton.com/qa/</loc>
   <priority>0.9</priority>
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 <url>
-  <loc>https://www.enbatminton.com/site/tokyo/nerima/</loc>
+  <loc>https://www.enbatminton.com/site/tokyo/shinjuku/</loc>
   <priority>0.8</priority>
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 <url>
-  <loc>https://www.enbatminton.com/site/tokyo/itabashi/</loc>
+  <loc>https://www.enbatminton.com/site/tokyo/nerima/</loc>
   <priority>0.7</priority>
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 <url>
-  <loc>https://www.enbatminton.com/site/tokyo/schedule/</loc>
+  <loc>https://www.enbatminton.com/site/tokyo/itabashi/</loc>
   <priority>0.6</priority>
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 <url>
-  <loc>https://www.enbatminton.com/en/</loc>
+  <loc>https://www.enbatminton.com/site/tokyo/schedule/</loc>
   <priority>0.5</priority>
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 <url>
-  <loc>https://www.enbatminton.com/zh-cn/</loc>
+  <loc>https://www.enbatminton.com/en/</loc>
   <priority>0.4</priority>
+  <lastmod>2025-01-12T09:00:39+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.enbatminton.com/zh-cn/</loc>
+  <priority>0.3</priority>
   <lastmod>2025-01-12T09:00:39+09:00</lastmod>
 </url>
 </urlset>

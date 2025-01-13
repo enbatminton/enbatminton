@@ -1023,3 +1023,7 @@ iframe.youtube-16-9 {
 .fc .fc-list-event:hover td{
   background-color: #dc3545 ;
 }
+
+.masthead .masthead-sub-subheading {
+  font-size: 1rem;
+}

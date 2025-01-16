@@ -1044,13 +1044,13 @@ img.media{
   padding: 1rem;
 }
 
+.text-decoration-none{
+  text-decoration: none;
+}
+
 .wide{
-  background: url("../images/main_image.png");
+  background: url("../images/main_image.webp");
   position: relative;
   width: 100%;
   min-height: 100vh;
-}
-
-.text-decoration-none{
-  text-decoration: none;
 }

@@ -1027,3 +1027,14 @@ iframe.youtube-16-9 {
 .masthead .masthead-sub-subheading {
   font-size: 1rem;
 }
+
+img.media{
+  width: 55px;
+  height: 55px;
+}
+
+@media (min-width: 992px) {
+  img.media{
+    margin: 10px;
+  }
+}

@@ -1054,3 +1054,7 @@ img.media{
   width: 100%;
   min-height: 100vh;
 }
+
+.c-1{
+  padding-right: 1rem;
+}

@@ -55,6 +55,35 @@
     gtag('js', new Date());
     gtag('config', 'G-B0B76S4HVF');
   </script>
+  <script defer src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+  <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+  <script defer src="https://unpkg.com/tippy.js@6"></script>
+  <script defer src='../../../js/google-calendar/index.global.min.js'></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'listWeek',
+        locale: 'ja',
+        height: 'auto',
+        navLinks: false,
+        events: {
+          googleCalendarId: "f8475db5c72e219adf03261b9b786943b32deb91365c02e709c380e1e7977131@group.calendar.google.com",
+          className: 'my-events',
+          textColor: 'red',
+          backgroundColor: '#ffffff00',
+          borderColor: '#ffffff00'
+        },
+        googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',
+        eventClick: function (info) {
+          info.jsEvent.preventDefault();
+        },
+        eventTimeFormat: { hour: 'numeric', minute: '2-digit' }
+      });
+      calendar.render();
+    });
+  </script>
+
 </head>
 
 <body id="page-top">
@@ -104,16 +133,17 @@
     <nav id="tpath" role="navigation" aria-label="現在の位置">
       <p>
         <a href="../../">トップページ</a> &gt;
-        開催日・スケジュール 
+        開催日・スケジュール
       </p>
     </nav>
     <h1 class="text-uppercase mb-0 qa-title">開催日・スケジュール </h1>
     <p class="modifiedDate"><time datetime="2025-01-27T10:10:25+09:00">最終更新日 : 2025.01.27</time></p>
     <p>現状の参加人数について把握したい場合、BANDアプリを閲覧してください。</p>
     <a href="./past/">過去の開催スケジュールはこちらです。</a>
-      <div class="row justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-7 col-xl-8">
-        <h2 class="text-center">2025.02</h2><hr>
+        <h2 class="text-center">2025.02</h2>
+        <hr>
         <div class="schedule row mt-3">
           <div class="col-lg-2 ms-auto publish-date">
             2025/2/1(土)
@@ -189,20 +219,27 @@
             2025/2/24(月)
           </div>
           <div class="col-lg-2 ms-auto publish-date">
-            19:30～ 22:00 
+            19:30～ 22:00
           </div>
           <div class="col-lg-4 ms-auto">
-            新宿スポーツセンター大体育室 
+            新宿スポーツセンター大体育室
           </div>
           <div class="col-lg-4 ms-auto">
             参加上限：18名
           </div>
         </div>
       </div>
+      <br>
+      <div class="calendar">
+      <h2 class="text-center mt-5">開催カレンダー</h2>
+      <div class="text-center">
+        <div id='calendar'></div>
+      </div>
+      </div>
 
     </div>
-  </div>
-</section>
+    </div>
+  </section>
   <a class="pagetop" href="#">
     <div class="pagetop__arrow"></div>
   </a>

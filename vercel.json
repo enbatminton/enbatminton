@@ -1,5 +1,22 @@
 {
     "rewrites": [
+        {
+            "source": "/shinjuku",
+            "destination": "/page/schedule"
+        },
+        {
+            "source": "/nerima",
+            "destination": "/page/schedule"
+        },
+        {
+            "source": "/site/tokyo/nerima/",
+            "destination": "/page/schedule"
+        },
+        {
+            "source": "/site/tokyo/itabashi/",
+            "destination": "/page/schedule"
+        },
         {"source": "/(.*)", "destination": "/"}
+
     ]
 }

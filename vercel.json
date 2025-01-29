@@ -9,6 +9,14 @@
             "destination": "/page/schedule"
         },
         {
+            "source": "/itabashi",
+            "destination": "/page/schedule"
+        },
+        {
+            "source": "/site/tokyo/shinjuku/",
+            "destination": "/page/schedule"
+        },
+        {
             "source": "/site/tokyo/nerima/",
             "destination": "/page/schedule"
         },
@@ -17,6 +25,5 @@
             "destination": "/page/schedule"
         },
         {"source": "/(.*)", "destination": "/"}
-
     ]
 }

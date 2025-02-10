@@ -24,6 +24,11 @@
             "source": "/site/tokyo/itabashi/",
             "destination": "/page/schedule"
         },
-        {"source": "/(.*)", "destination": "/"}
+        {"source": "/(.*)", "destination": "/" , "headers": [
+            {
+              "key": "X-Robots-Tag",
+              "value": "noindex"
+            }
+          ]}
     ]
 }

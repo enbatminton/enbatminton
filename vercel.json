@@ -1,34 +1,5 @@
 {
-    "rewrites": [
-        {
-            "source": "/shinjuku",
-            "destination": "/page/schedule"
-        },
-        {
-            "source": "/nerima",
-            "destination": "/page/schedule"
-        },
-        {
-            "source": "/itabashi",
-            "destination": "/page/schedule"
-        },
-        {
-            "source": "/site/tokyo/shinjuku/",
-            "destination": "/page/schedule"
-        },
-        {
-            "source": "/site/tokyo/nerima/",
-            "destination": "/page/schedule"
-        },
-        {
-            "source": "/site/tokyo/itabashi/",
-            "destination": "/page/schedule"
-        },
-        {"source": "/(.*)", "destination": "/" , "headers": [
-            {
-              "key": "X-Robots-Tag",
-              "value": "noindex"
-            }
-          ]}
-    ]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

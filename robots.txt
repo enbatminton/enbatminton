@@ -8,7 +8,6 @@ Disallow: /site/tokyo/narima/
 Disallow: /site/tokyo/shinjuku/page/photo/
 Disallow: /shinjuku/
 Disallow: /index.html
-Disallow: /site/tokyo/narima/
 
 User-agent: Bingbot
 Sitemap: https://www.enbatminton.com/sitemap.xml
@@ -20,7 +19,6 @@ Disallow: /site/tokyo/narima/
 Disallow: /site/tokyo/shinjuku/page/photo/
 Disallow: /shinjuku/
 Disallow: /index.html
-Disallow: /site/tokyo/narima/
 
 User-agent: ClaudeBot
 Sitemap: https://www.enbatminton.com/sitemap.xml
@@ -32,4 +30,3 @@ Disallow: /site/tokyo/narima/
 Disallow: /site/tokyo/shinjuku/page/photo/
 Disallow: /shinjuku/
 Disallow: /index.html
-Disallow: /site/tokyo/narima/

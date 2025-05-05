@@ -1100,3 +1100,15 @@ html {
   transform: translateY(20%) rotate(-45deg);
 }
 
+a .disabled-schedule{
+  color: #000000;
+  text-decoration: none;
+}
+.disabled-schedule:hover{
+  color: blue;
+  text-decoration: none;
+}
+.disabled-schedule {
+  pointer-events: none;
+  opacity: 0.5;
+}

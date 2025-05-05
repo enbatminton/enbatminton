@@ -58,32 +58,6 @@
   <script defer src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
   <script defer src="https://unpkg.com/@popperjs/core@2"></script>
   <script defer src="https://unpkg.com/tippy.js@6"></script>
-  <script defer src='../../../js/google-calendar/index.global.min.js'></script>
-  <script defer>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'listWeek',
-        locale: 'ja',
-        height: 'auto',
-        navLinks: true,
-        events: {
-          googleCalendarId: "f8475db5c72e219adf03261b9b786943b32deb91365c02e709c380e1e7977131@group.calendar.google.com",
-          className: 'my-events',
-          textColor: '#000000',
-          backgroundColor: '#ffffff',
-          borderColor: '#dddddd'
-        },
-        googleCalendarApiKey: 'AIzaSyCQRP2I5IHVRx6Qk2_k3AOzOfFBoQY_b_I',
-        eventClick: function (info) {
-          info.jsEvent.preventDefault();
-        },
-        eventTimeFormat: { hour: 'numeric', minute: '2-digit' }
-      });
-      calendar.render();
-    });
-  </script>
-
 </head>
 
 <body id="page-top">
@@ -142,77 +116,65 @@
     <h1 class="text-uppercase mb-0 qa-title">開催日・スケジュール </h1>
     <p class="modifiedDate"><time datetime="2025-05-04T00:33:55+09:00">最終更新日 : 2025-05-04</time></p>
     <p>現状の参加人数について把握したい場合、BANDアプリを閲覧してください。</p>
-    <div class="calendar">
-      <h2 class="text-center mt-5">開催カレンダー</h2>
-    </div>
-    <div class="row justify-content-center mt-5">
-      <div class="row justify-content-center mt-5">
-        <div class="col-lg-7 col-xl-8 text-center">
-            <img src="../../images/calendar/2025.05_calendar.png" class="img-fluid">
-        </div>
-        <br/>
-        <div class="col-lg-7 col-xl-8 mt-5">
-          <h2 class="text-center">2025.05</h2>
-          <hr>
-          <div class="schedule row mt-3">
-            <div class="col-lg-2 ms-auto publish-date">
-              5/5(土) 
-            </div>
-            <div class="col-lg-2 ms-auto publish-date">
-              9:00～12:00
-            </div>
-            <div class="col-lg-4 ms-auto">
-              板橋区体育館@3面
-            </div>
-            <div class="col-lg-4 ms-auto">
-              参加上限：28名
-            </div>
-          </div>
-          <div class="schedule row mt-3">
-            <div class="col-lg-2 ms-auto publish-date">
-              5/6(火・祝) 
-            </div>
-            <div class="col-lg-2 ms-auto publish-date">
-              18:00 ～ 21:30
-            </div>
-            <div class="col-lg-4 ms-auto">
-              江東区体育館@3面
-            </div>
-            <div class="col-lg-4 ms-auto">
-              参加上限：28名
-            </div>
-          </div>
-          <div class="schedule row mt-3">
-            <div class="col-lg-2 ms-auto publish-date">
-              5/11(土)
-            </div>
-            <div class="col-lg-2 ms-auto publish-date">
-              18:00～ 21:00
-            </div>
-            <div class="col-lg-4 ms-auto">
-              板橋区体育館@4面
-            </div>
-            <div class="col-lg-4 ms-auto">
-              参加上限：36名
-            </div>
-          </div>
-          <div class="schedule row mt-3">
-            <div class="col-lg-2 ms-auto publish-date">
-              5/24(土)
-            </div>
-            <div class="col-lg-2 ms-auto publish-date">
-              12:20～ 15:20
-            </div>
-            <div class="col-lg-4 ms-auto">
-              新宿体育館@3面
-            </div>
-            <div class="col-lg-4 ms-auto">
-              参加上限：30名
+
+    <!-- Card Style Schedule Section -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">開催スケジュール</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm disabled-schedule bg-secondary text-white">
+            <div class="card-body">
+              <h5 class="card-title">5/5(土)</h5>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-primary">9:00～12:00</span>
+                <span class="badge bg-secondary">参加上限：28名</span>
+              </div>
+              <p class="card-text">板橋区体育館@3面</p>
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a class="schedule-link" href="./20250506_koto/">
+              <div class="card-body">
+              <h5 class="card-title">5/6(火・祝)</h5>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-primary">18:00～21:30</span>
+                <span class="badge bg-secondary">参加上限：28名</span>
+              </div>
+              <p class="card-text">江東区体育館@3面</p>
+            </div>
+            </a>
+          </div>
         </div>
-        <br>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a class="schedule-link" href="./20250511_itabashi/">
+              <div class="card-body">
+              <h5 class="card-title">5/11(土)</h5>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-primary">18:00～21:00</span>
+                <span class="badge bg-secondary">参加上限：36名</span>
+              </div>
+              <p class="card-text">板橋区体育館@4面</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a class="schedule-link" href="./20250524_shinjuku/">
+            <div class="card-body">
+              <h5 class="card-title">5/24(土)</h5>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-primary">12:20～15:20</span>
+                <span class="badge bg-secondary">参加上限：30名</span>
+              </div>
+              <p class="card-text">新宿体育館@3面</p>
+            </div>
+          </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

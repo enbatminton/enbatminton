@@ -1,16 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "headers": [
+  "redirects": [
     {
-      "source": "/(.*)",
-      "headers" : [
-        {
-          "key" : "X-Frame-Options",
-          "value" : "DENY"
-        }
-      ]
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
     }
-  ]  
+  ]
 }

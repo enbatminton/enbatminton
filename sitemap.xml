@@ -58,6 +58,13 @@
 </url>
 
 <url>
+  <loc>https://www.enbatminton.com/page/schedule/20250518_shinjuku_night/</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2025-05-04T00:33:20+09:00</lastmod>
+</url>
+
+<url>
   <loc>https://www.enbatminton.com/page/news/</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>

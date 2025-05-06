@@ -1,34 +1,8 @@
 User-agent: Googlebot
 Sitemap: https://www.enbatminton.com/sitemap.xml
-Disallow: /zh-tw/
-Disallow: /en/
-Disallow: /site/
-Disallow: /site/tokyo/itabashi/
-Disallow: /site/page/qa/
-Disallow: /site/tokyo/narima/
-Disallow: /site/tokyo/shinjuku/page/photo/
-Disallow: /shinjuku/
-Disallow: /index.html
 
 User-agent: Bingbot
 Sitemap: https://www.enbatminton.com/sitemap.xml
-Disallow: /zh-tw/
-Disallow: /en/
-Disallow: /site/
-Disallow: /site/tokyo/itabashi/
-Disallow: /site/page/qa/
-Disallow: /site/tokyo/narima/
-Disallow: /site/tokyo/shinjuku/page/photo/
-Disallow: /shinjuku/
-Disallow: /index.html
 
 User-agent: ClaudeBot
 Sitemap: https://www.enbatminton.com/sitemap.xml
-Disallow: /zh-tw/
-Disallow: /en/
-Disallow: /site/
-Disallow: /site/tokyo/itabashi/
-Disallow: /site/tokyo/narima/
-Disallow: /site/tokyo/shinjuku/page/photo/
-Disallow: /shinjuku/
-Disallow: /index.html

@@ -4,11 +4,9 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "status": 404,
-      "destination": "/404.html"
     }
-  ]
+  ],
+  "routes": [
+    { "src": "/.*", "status": 404,"dest": "https://www.enbatminton.com/404.html" }
+  ]  
 }

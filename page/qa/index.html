@@ -66,329 +66,188 @@
     gtag('config', 'G-B0B76S4HVF');
   </script>
   <style>
+    .navbar {
+      background-color: #2c3e50;
+    }
+    .navbar-brand {
+      color: white !important;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: rgba(255,255,255,0.8) !important;
+    }
+    .nav-link:hover {
+      color: white !important;
+    }
+    .faq-header {
+      background-color: #f8f9fa;
+      padding: 60px 0 30px;
+      margin-bottom: 30px;
+    }
     .accordion-button:not(.collapsed) {
-      background-color: #212529;
+      background-color: #2c3e50;
       color: white;
     }
     .accordion-button:focus {
-      box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.25);
+      box-shadow: 0 0 0 0.25rem rgba(44, 62, 80, 0.25);
     }
     .question-title {
-      color: #212529;
+      color: #2c3e50;
+      font-weight: bold;
     }
     .question-subtitle {
-      color: #212529;
+      color: #2c3e50;
+      font-weight: 600;
     }
-    .qa-title {
-      color: #212529;
+    .btn-primary {
+      background-color: #2c3e50;
+      border-color: #2c3e50;
     }
-    .pagetop__arrow {
-      border-top: 5px solid #212529;
-      border-right: 5px solid #212529;
+    .btn-primary:hover {
+      background-color: #1a252f;
+      border-color: #1a252f;
     }
-    .btn-danger {
-      background-color: #212529;
-      border-color: #212529;
-    }
-    .btn-danger:hover {
-      background-color: #000000;
-      border-color: #000000;
-    }
-    .accordion-button {
-      background-color: #f8f9fa;
-    }
-    .accordion-button:hover {
-      background-color: #e9ecef;
-    }
-    .accordion-body {
-      background-color: #ffffff;
-    }
-    .copyright {
-      background-color: #212529;
+    .footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      margin-top: 50px;
     }
   </style>
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="../../">エンバド</a>
-      <button class="navbar-toggler text-uppercase font-weight-bold bg-menu text-white rounded" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">Menu
-        <i class="fas fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../schedule/">開催日・スケジュール</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../schedule/">開催日・スケジュール</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../manual/">参加方法</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../manual/">参加方法</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://www.instagram.com/enbadmibton/">活動動画</a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/enbadmibton/">活動動画</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../qa/">よくある質問</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="../qa/">よくある質問</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../member/">メンバー紹介</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../member/">メンバー紹介</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../news/">ニュース</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../news/">ニュース</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
+          <li class="nav-item">
             <a href="https://www.instagram.com/enbadmibton/" rel="nofollow" aria-label="エンバドのInstagramアカウント">
               <img src="../../images/Instagram.webp" class="media" alt="エンバドのInstagramアイコン" width="32" height="32">
             </a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
+          <li class="nav-item">
             <a href="https://lin.ee/qPQZFcK" rel="nofollow" aria-label="エンバドのLINE公式アカウント">
               <img src="../../images/line.webp" class="media" alt="エンバドのLINEアイコン" width="32" height="32">
             </a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded btn btn-danger " href="https://band.us/n/a5adAcA8K5Aak"
-              rel="nofollow">参加・見学・問い合わせ</a>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="https://band.us/n/a5adAcA8K5Aak" rel="nofollow">参加・見学・問い合わせ</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <section class="article-container text-left page-section" id="header">
-    <!-- Masthead-->
-    <nav id="tpath" role="navigation" aria-label="現在の位置">
-      <p>
-        <a href="../../">トップページ</a> &gt;
-        よくある質問
-      </p>
-    </nav>
-    <h1 class="text-uppercase mb-0 qa-title">よくある質問</h1>
-    <p>お問い合わせいただく前に、下記の「よくある質問」をご覧ください。もしそれでも不明点あれば、画面上の問い合わせから、BANDよりチャットください。</p>
-    <p class="modifiedDate"><time datetime="2025-05-04T00:33:55+09:00">最終更新日:2025-05-04
-      </time></p>
-    </div>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            <h2 class="mb-0">
-              <div class="question-title">メンバーについて</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">男女はどのくらいになりますか？</div>
-            </h3>
-            <p class="mt-3">概ね男女比が 5対5 or 6対4 になっています。</p>
-            <h3>
-              <div class="question-subtitle">年齢層はどのくらいになりますか？</div>
-            </h3>
-            <p class="mt-3">20から40代と幅広い年齢そうになっています。</p>
-            <h3>
-              <div class="question-subtitle">みなさんのレベルはどのくらいになりますか？</div>
-            </h3>
-            <p class="mt-3">体育の授業でやったことあるレベルの方や、部活でバドミントンをやっていた方まで幅広い方がいます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <h2 class="mb-0">
-              <div class="question-title">参加について</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">バドミントンをしたいです。参加方法はどうすればよいですか？</div>
-            </h3>
-            <p class="mt-3">画面右上の参加ボタンで、参加可能です。BANDというアプリで出席管理しています。こちら登録をお願いします。<a
-                href="../manual/">動画のマニュアル用意しています。</a></p>
-            <h3>
-              <div class="question-subtitle">参加ボタンが表示されず、キャンセル待ちになります。参加可能ですか？</div>
-            </h3>
-            <p class="mt-3">参加不可です。こちらあえて人数制限を設けています。申し訳ないのですが、キャンセル待ちを選択してお待ち下さい。</p>
-            <h3>
-              <div class="question-subtitle">キャンセル待ちの基準について教えて下さい。</div>
-            </h3>
-            <p class="mt-3">2面：20名、新宿の場合は  22名。3面：28名、新宿の場合は  30名。4面：36名で運用しています。</p>
-            <h3>
-              <div class="question-subtitle">毎回参加出来ないのですが良いですか？</div>
-            </h3>
-            <p class="mt-3">はい、基本参加は自由になります。なので毎回参加しなくてよいです。参加できるタイミングでお願いします。</p>
-            <h3>
-              <div class="question-subtitle">年齢制限はありますか？</div>
-            </h3>
-            <p class="mt-3">年齢制限はありません。学生でも参加可能ですが、ルールを守り、ご参加いただければと思います。</p>
-            <h3>
-              <div class="question-subtitle">子供を連れて行ってもいいですか？</div>
-            </h3>
-            <p class="mt-3">はい、連れて行っても大丈夫です。ただ、使用中のコートに入らないようお願いします。また、迷子にならないように見ていただけるようにお願いします。</p>
-            <h3>
-              <div class="question-subtitle">途中入場・途中退出可能ですか？</div>
-            </h3>
-            <p class="mt-3">はい。可能です。但し、その場合の料金は一律とさせてください。</p>
-            <h3>
-              <div class="question-subtitle">いきなりサークルに参加するのは厳しいので、見学可能ですか？</div>
-            </h3>
-            <p class="mt-3">
-              はい。可能です。バドミントンをしないということであれば、無料で出来ます。体育館に観客席があるのでそこからご覧いただければと思います。また体育館に直接おこしいてただければ軽く案内はします。その際は、事前に連絡いただけると助かります。
-            </p>
-            <h3>
-              <div class="question-subtitle">日本人ではないのですが、参加可能ですか？</div>
-            </h3>
-            <p class="mt-3">はい。国籍関係なく参加可能です。ただ、基本コミュニケーションが日本語のため、ある程度日本語でコミュニケーションできる方でお願いします。</p>
-            <h3>
-              <div class="question-subtitle">当日の参加方法を教えて下さい。</div>
-            </h3>
-            <p class="mt-3">体育館に更衣室があります。そこで着替えていただき、体育館へ集合してください。受付ありますので、そこで流れを聞いていただければと思います。</p>
-            <h3>
-              <div class="question-subtitle">次回のスケジュールは、いつでますか？</div>
-            </h3>
-            <p class="mt-3">随時体育館が取れ次第になります、早いもので3ヶ月前になります。ただ直前で決まる場合もあります。詳細はBANDの予定をご確認ください。</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <h2 class="mb-0">
-              <div class="question-title">持ち物について</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">バドミントンの道具がありません、参加できますか？</div>
-            </h3>
-            <p class="mt-3">参加できます。ラケットは、こちらから貸出可能です。ただし人数全員分ないため、使いまわしになる可能性あります。ご了承ください。またシャトルも、こちらから提供します。</p>
-            <h3>
-              <div class="question-subtitle">何をもっていけばよいでしょうか？</div>
-            </h3>
-            <p class="mt-3"> 1.運動ができる服装 2.体育館シューズ 3.飲み物 4.汗拭きタオル 5.持っているのであればバドミントンラケット を持ってきてください。</p>
-            <h3>
-              <div class="question-subtitle">自販機はありますか？</div>
-            </h3>
-            <p class="mt-3"> 体育館にある場合もあります。ただし、場所によってはない場合もあるので、事前に近くのコンビニなどで購入するのがおすすめです。</p>
-            <h3>
-              <div class="question-subtitle">体育館シューズは貸出ありますか？</div>
-            </h3>
-            <p class="mt-3">基本持参していただくようにお願いします。ただ新宿スポーツセンターの場合のみ、スポーツセンターで別途料金かかりますが、レンタル可能です。</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            <h2 class="mb-0">
-              <div class="question-title">料金について</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">料金は、いくらかかりますか？</div>
-            </h3>
-            <p class="mt-3">基本800円です。ただ15名以下の参加数の場合、1000円とさせてください。</p>
-            <p class="mt-3">支払いは、現金支払の場合はお釣りがでないようにお願いします。PayPayなどのキャッシュレスの支払いも対応しています。</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            <h2 class="mb-0">
-              <div class="question-title">注意事項について</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">当日無断で欠席した場合、どうなりますか？</div>
-            </h3>
-            <p class="mt-3">当日、参加前までに参加できない旨をご連絡ください。</p>
-            <p class="mt-3">当日でも連絡していただければ問題ございません。</p>
-            <p class="mt-3">もし当日無断キャンセルされた場合は、直近1ヶ月の参加の取り消しなどを行います。</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            <h2 class="mb-0">
-              <div class="question-title">SNS(連絡先)について</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">LINEはありますか？</div>
-            </h3>
-            <p class="mt-3">公式LINEを用意しています。こちらメッセージのやりとりではなく、スタンプカードの利用、開催日の確認でご利用ください。</p>
-            <a href="https://lin.ee/MV7vp1l">https://lin.ee/MV7vp1l</a>
-          </div>
-        </div>
-        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">Instagramはありますか？</div>
-            </h3>
-            <p class="mt-3">インスタグラムも用意しています。開催日の確認などでご利用ください。</p>
-            <a href="https://www.instagram.com/enbadmibton/">https://www.instagram.com/enbadmibton/</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-            <h2 class="mb-0">
-              <div class="question-title">保険について</div>
-            </h2>
-          </button>
-        </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h3>
-              <div class="question-subtitle">怪我した場合どうなりますか？</div>
-            </h3>
-            <p class="mt-3">基本的に自己責任でお願いしますが、スポーツの団体保険の加入をお願いしてます。（任意）</p>
-            <p class="mt-3">1.お名前 2.年齢 3. 1850円 を公式LINE or BANDでご連絡をお願いします。</p>
-            <p class="mt-3">保険の詳細は、以下ご確認ください。</p>
-            <a href="https://www.sportsanzen.org/hoken/" rel="nofollow">
-              <p class="mt-3">https://www.sportsanzen.org/hoken/</p>
-            </a>
-            <p class="mt-3">また念の為、救急セット（湿布など）は用意しています。</p>
-          </div>
-        </div>
-      </div>
-
-  </section>
-  <a class="pagetop" href="#">
-    <div class="pagetop__arrow"></div>
-  </a>
-  <div class="copyright py-4 text-center text-white">
+  <header class="faq-header">
     <div class="container">
-      <small>Copyright &copy; enbatminton 2024</small>
+      <h1 class="text-center mb-4">よくある質問</h1>
+      <p class="text-center">バドミントンサークルに関するよくある質問と回答をご紹介します。</p>
     </div>
-  </div>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </header>
+  <main class="container mb-5">
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            <span class="question-title">参加について</span>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <h3 class="question-subtitle">初心者でも参加できますか？</h3>
+            <p>はい、初心者の方も大歓迎です。基本的なルールや技術から丁寧に指導させていただきます。</p>
+            
+            <h3 class="question-subtitle">参加費用はいくらですか？</h3>
+            <p>1回の参加費は1,000円です。シャトル代も含まれています。</p>
+            
+            <h3 class="question-subtitle">持ち物は何が必要ですか？</h3>
+            <p>運動できる服装、体育館シューズ、タオル、飲み物をご用意ください。ラケットは貸出可能です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            <span class="question-title">スケジュールについて</span>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <h3 class="question-subtitle">活動日はいつですか？</h3>
+            <p>毎週土曜日の19:00-21:00に活動しています。</p>
+            
+            <h3 class="question-subtitle">予約は必要ですか？</h3>
+            <p>はい、参加希望の方は前日までに予約をお願いします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            <span class="question-title">レベルについて</span>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <h3 class="question-subtitle">どのくらいのレベルですか？</h3>
+            <p>初心者から中級者まで幅広いレベルの方が参加されています。</p>
+            
+            <h3 class="question-subtitle">試合形式の練習はありますか？</h3>
+            <p>はい、基本的な練習の後、ダブルスの試合形式で練習を行います。</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            <span class="question-title">その他</span>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <h3 class="question-subtitle">駐車場はありますか？</h3>
+            <p>近隣にコインパーキングがございます。</p>
+            
+            <h3 class="question-subtitle">更衣室はありますか？</h3>
+            <p>はい、男女別の更衣室がございます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <h2 class="mb-4">まだ質問が解決しない場合は</h2>
+      <p class="mb-4">お気軽にお問い合わせください。</p>
+      <a href="#" class="btn btn-primary btn-lg">お問い合わせ</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-0">© 2024 バドミントンサークル All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -14,11 +14,11 @@
   <meta property="article:published_time" content="2024-05-04T00:33:20+09:00">
   <meta property="article:modified_time" content="2024-05-04T00:33:20+09:00">
   <link rel="shortcut icon" href="./images/mbr-96x93.png" type="image/x-icon">
-  <title>エンバド｜東京のバドミントンサークル｜新宿区・練馬区・板橋区・江東区で活動中</title>
-  <meta name="description" content="東京(新宿区、練馬区、板橋区、江東区)で活動するバドミントンサークル「エンバド」。初心者から経験者まで、年齢・性別問わず楽しめるバドミントンサークルです。週末を中心に活動中。見学・体験参加も大歓迎！">
+  <title>エンバド | 東京(新宿区、練馬区、板橋区、江東区)のバドミントンサークル</title>
+  <meta name="description" content="東京(新宿区、練馬区、板橋区、江東区)で活動するバドミントンサークル「エンバド」。初心者から経験者まで、年齢・性別問わず楽しめるバドミントンサークルです。">
   <meta name="keywords" content="バドミントン,東京,新宿区,練馬区,板橋区,江東区,サークル,初心者,体験">
   <meta name="google-page-verification" content="GRAY9tdEige03JNzi4CE8mKCAij14ihMQVXCb8XZ8Cs" />
-  <meta property="og:title" content="エンバド｜東京のバドミントンサークル" />
+  <meta property="og:title" content="エンバド | 東京のバドミントンサークル" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://enbatminton.com" />
   <meta property="og:image" content="https://enbatminton.com/images/enbatminton.png" />
@@ -40,7 +40,6 @@
     gtag('js', new Date());
     gtag('config', 'G-B0B76S4HVF');
   </script>
-
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -63,432 +62,250 @@
     ]
   }
   </script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #1abc9c;
+      --secondary-color: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    
+    .navbar {
+      background-color: var(--secondary-color);
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/main_image.webp');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+    
+    .feature-card {
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .schedule-card {
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .footer {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 40px 0;
+    }
+    
+    .social-icon {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    
+    .btn-primary:hover {
+      background-color: #15967d;
+      border-color: #15967d;
+    }
+  </style>
 </head>
-<style>
-@charset "UTF-8";
-
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #1abc9c;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 9, 88, 149;
-  --bs-secondary-rgb: 44, 62, 80;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
-  --bs-border-width: 0.125rem;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.5rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.75rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-2xl: 2rem;
-  --bs-border-radius-pill: 50rem;
-  --bs-link-color: 33, 58, 242;
-  --bs-link-hover-color: #15967d;
-  --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
-}
-
-body {
-  margin: 0;
-  font-family: 'Noto Sans JP';
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.container {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.d-flex {
-  display: flex !important;
-}
-
-.flex-column {
-  flex-direction: column !important;
-}
-
-.align-items-center {
-  align-items: center !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-white {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
-
-.bg-secondary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-menu {
-  --bs-bg-opacity: 1;
-  background-color: rgb(229, 31, 31);
-}
-
-.rounded {
-  border-radius: var(--bs-border-radius) !important;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.navbar {
-  --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
-  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
-  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3125rem;
-  --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-nav-link-padding-x: 0.5rem;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-}
-
-.navbar > .container {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-brand {
-  padding-top: var(--bs-navbar-brand-padding-y);
-  padding-bottom: var(--bs-navbar-brand-padding-y);
-  margin-right: var(--bs-navbar-brand-margin-end);
-  font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.navbar-nav {
-  --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
-  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-}
-
-.navbar-toggler {
-  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-  font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
-  color: var(--bs-navbar-color);
-  background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-  border-radius: var(--bs-navbar-toggler-border-radius);
-  transition: var(--bs-navbar-toggler-transition);
-}
-
-.nav-link {
-  display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
-  font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: var(--bs-navbar-nav-link-padding-x);
-    padding-left: var(--bs-navbar-nav-link-padding-x);
-  }
-
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-  }
-
-  .navbar-expand-lg .navbar-toggler {
-    display: none;
-  }
-
-  .mx-lg-1 {
-    margin-right: 0.25rem !important;
-    margin-left: 0.25rem !important;
-  }
-
-  .px-lg-3 {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-  }
-}
-
-.py-3 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
-.py-4 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
-.mx-0 {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
-
-.px-0 {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-.p-3 {
-  padding: 1rem;
-}
-
-.text-decoration-none {
-  text-decoration: none;
-}
-
-.copyright {
-  background-color: #1a252f;
-}
-
-#title {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.subtitle {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-img.media {
-  width: 55px;
-  height: 55px;
-}
-
-@media (min-width: 992px) {
-  img.media {
-    margin: 10px;
-  }
-}
-
-.wide {
-  position: relative;
-  bottom: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 800px;
-  background-repeat: no-repeat;
-  background: url("../images/main_image_min.webp");
-  background-size: 100% auto;
-}
-
-@media (min-width: 992px) {
-  .wide {
-    background: url("../images/main_image.webp");
-    height: 1200px;
-  }
-}
-</style>
 <body id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav" role="navigation" aria-label="メインナビゲーション">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="./" aria-label="ホーム">エンバド</a>
-      <button class="navbar-toggler text-uppercase font-weight-bold bg-menu text-white rounded" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="メニューを開く">
-        Menu
-        <i class="fas fa-bars" aria-hidden="true"></i>
+      <a class="navbar-brand" href="#">エンバド</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./page/schedule/" aria-label="開催日・スケジュール">開催日・スケジュール</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">サークル紹介</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./page/manual/" aria-label="参加方法">参加方法</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">スケジュール</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./page/qa/" aria-label="よくある質問">よくある質問</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">特徴</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./page/news/" aria-label="ニュース">ニュース</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a href="https://www.instagram.com/enbadbadminton/" rel="nofollow" aria-label="Instagramでエンバドをフォロー">
-              <img src="./images/Instagram.webp" class="media" alt="エンバドのInstagramアカウント" width="32" height="32" loading="lazy">
-            </a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a href="https://lin.ee/qPQZFcK" rel="nofollow" aria-label="LINEでエンバドを友達追加">
-              <img src="./images/line.webp" class="media" alt="エンバドのLINEアカウント" width="32" height="32" loading="lazy">
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">お問い合わせ</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Masthead-->
-  <header id="header" role="banner">
-    <div class="wide">
-      <div class="container d-flex align-items-center flex-column text-white">
-        <!-- Masthead Heading-->
-        <h1 class="masthead-heading text-uppercase mb-0" id="title">エンバド</h1>
-        <h2 class="subtitle">東京(新宿区、練馬区、板橋区、江東区)でバドミントンしている団体・サークル</h2>
-        <a href="./page/schedule/" class="text-decoration-none">
-          <h3 class="p-3">開催日・スケジュール</h3>
-        </a>
-        <a href="./page/manual/" class="text-decoration-none">
-          <h3 class="p-3">参加方法</h3>
-        </a>
-        <a href="./page/qa/" class="text-decoration-none">
-          <h3 class="p-3">よくある質問</h3>
-        </a>
-        <a href="./page/news/" class="text-decoration-none">
-          <h3 class="p-3">ニュース</h3>
-        </a>
-        <a href="https://www.instagram.com/enbadbadminton/" class="text-decoration-none">
-          <h3 class="p-3">活動動画</h3>
-        </a>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 mb-4">エンバド</h1>
+      <p class="lead mb-4">東京のバドミントンサークル</p>
+      <a href="#contact" class="btn btn-primary btn-lg">参加する</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">サークル紹介</h2>
+      <p class="text-center text-muted mb-4">最終更新日: 2024年5月4日</p>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">東京(新宿区、練馬区、板橋区、江東区)で活動するバドミントンサークル「エンバド」。</p>
+          <p>初心者から経験者まで、年齢・性別問わず楽しめるバドミントンサークルです。週末を中心に活動中。見学・体験参加も大歓迎！</p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Instagramで活動をチェック！</h5>
+              <p class="card-text">最新の活動風景やイベント情報をInstagramで発信中！</p>
+              <div class="d-flex justify-content-center mb-3">
+                <a href="https://www.instagram.com/enbadmibton/" class="btn btn-outline-primary me-2" target="_blank">
+                  <i class="fab fa-instagram"></i> フォローする
+                </a>
+                <a href="https://www.instagram.com/enbadmibton/" class="btn btn-primary" target="_blank">
+                  投稿を見る
+                </a>
+              </div>
+              <div class="text-center">
+                <img src="images/Instagram.webp" alt="Instagramアイコン" class="img-fluid" style="max-width: 100px;">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
-  <!-- Copyright Section-->
-  <footer class="copyright py-4 text-center text-white" role="contentinfo">
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 bg-light">
     <div class="container">
-      <small>&copy; 2024 enbatminton All Rights Reserved.</small>
+      <h2 class="text-center mb-5">サークルの特徴</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card feature-card">
+            <div class="card-body text-center">
+              <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">初心者大歓迎</h5>
+              <p class="card-text">バドミントン未経験の方も安心して参加できます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">アクセス便利</h5>
+              <p class="card-text">新宿区、練馬区、板橋区、江東区で活動中。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card">
+            <div class="card-body text-center">
+              <i class="fas fa-clock fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">週末中心</h5>
+              <p class="card-text">土日を中心に活動しています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">今後のスケジュール</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card schedule-card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">5/18(日)</h5>
+              <p class="card-text">9:00～12:00 新宿体育館</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card schedule-card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">5/24(土)</h5>
+              <p class="card-text">12:20～15:20 新宿体育館@3面</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="page/schedule/" class="btn btn-primary">スケジュール一覧</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">お問い合わせ</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center mb-4">
+                <a href="https://www.instagram.com/enbadbadminton/" class="social-icon" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://lin.ee/qPQZFcK" class="social-icon" target="_blank">
+                  <i class="fab fa-line"></i>
+                </a>
+              </div>
+              <p class="text-center">参加・見学・問い合わせは以下のボタンからお願いします。</p>
+              <div class="text-center">
+                <a href="https://band.us/n/a5adAcA8K5Aak" class="btn btn-primary btn-lg" target="_blank">
+                  参加・見学・問い合わせ
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>エンバド</h5>
+          <p>東京のバドミントンサークル</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p>&copy; 2024 enbatminton All Rights Reserved.</p>
+        </div>
+      </div>
     </div>
   </footer>
-  <!-- Scripts -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
-    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

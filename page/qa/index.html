@@ -185,6 +185,41 @@
         font-size: 1rem;
       }
     }
+
+    /* 検索機能のスタイル */
+    .search-container {
+      position: relative;
+    }
+
+    #faqSearch {
+      border-radius: 20px 0 0 20px;
+      padding-left: 20px;
+      border: 1px solid var(--border-color);
+    }
+
+    #clearSearch {
+      border-radius: 0 20px 20px 0;
+      border: 1px solid var(--border-color);
+      border-left: none;
+    }
+
+    #searchResults {
+      background-color: var(--secondary-color);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    #searchResults .faq-item {
+      background-color: white;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .search-container {
+        padding: 0 15px;
+      }
+    }
   </style>
 </head>
 
@@ -221,9 +256,24 @@
       <h1>よくある質問</h1>
       <p class="text-center">バドミントンサークルに関するよくある質問と回答をご紹介します。</p>
       <p class="text-center text-muted"><small>最終更新日: 2025年5月12日</small></p>
+      <!-- 検索機能を追加 -->
+      <div class="search-container mt-4">
+        <div class="input-group mb-3 mx-auto" style="max-width: 500px;">
+          <input type="text" id="faqSearch" class="form-control" placeholder="質問を検索..." aria-label="質問を検索">
+          <button class="btn btn-outline-secondary" type="button" id="clearSearch">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
   <main class="container mb-5">
+    <!-- 検索結果の表示エリア -->
+    <div id="searchResults" class="mb-4" style="display: none;">
+      <h3 class="mb-3">検索結果</h3>
+      <div id="searchResultsList"></div>
+    </div>
+
     <!-- メンバーについて -->
     <section class="faq-category">
       <h2>メンバーについて</h2>
@@ -421,6 +471,87 @@
     </div>
   </footer>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- 検索機能のJavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('faqSearch');
+      const clearButton = document.getElementById('clearSearch');
+      const searchResults = document.getElementById('searchResults');
+      const searchResultsList = document.getElementById('searchResultsList');
+      const faqItems = document.querySelectorAll('.faq-item');
+      const faqCategories = document.querySelectorAll('.faq-category');
+
+      // 検索機能
+      function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        
+        if (searchTerm === '') {
+          // 検索語が空の場合は全て表示
+          faqCategories.forEach(category => category.style.display = 'block');
+          searchResults.style.display = 'none';
+          return;
+        }
+
+        // 検索結果をクリア
+        searchResultsList.innerHTML = '';
+        let hasResults = false;
+
+        // 各FAQアイテムを検索
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question').textContent.toLowerCase();
+          const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+          const category = item.closest('.faq-category').querySelector('h2').textContent;
+
+          if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+            hasResults = true;
+            
+            // 検索結果に追加
+            const resultItem = document.createElement('div');
+            resultItem.className = 'faq-item mb-3';
+            resultItem.innerHTML = `
+              <div class="faq-question">${item.querySelector('.faq-question').innerHTML}</div>
+              <div class="faq-answer">${item.querySelector('.faq-answer').innerHTML}</div>
+              <div class="text-muted mt-2"><small>カテゴリー: ${category}</small></div>
+            `;
+            searchResultsList.appendChild(resultItem);
+          }
+        });
+
+        // 検索結果の表示/非表示
+        searchResults.style.display = hasResults ? 'block' : 'none';
+        
+        // カテゴリーの表示/非表示
+        faqCategories.forEach(category => {
+          const hasVisibleItems = Array.from(category.querySelectorAll('.faq-item')).some(item => {
+            const question = item.querySelector('.faq-question').textContent.toLowerCase();
+            const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+            return question.includes(searchTerm) || answer.includes(searchTerm);
+          });
+          category.style.display = hasVisibleItems ? 'block' : 'none';
+        });
+      }
+
+      // 検索入力時のイベント
+      searchInput.addEventListener('input', performSearch);
+
+      // クリアボタンのイベント
+      clearButton.addEventListener('click', function() {
+        searchInput.value = '';
+        performSearch();
+      });
+
+      // Enterキーでの検索
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

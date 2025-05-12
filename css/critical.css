@@ -1,1 +1,18 @@
-:root{--primary-color:#0056b3;--secondary-color:#6c757d;--dark-color:#343a40;--primary-hover:#004494}.navbar{background-color:var(--dark-color);padding:1rem 0}.navbar-brand{font-weight:700;color:white}.nav-link{color:rgba(255,255,255,.8)!important}.nav-link:hover{color:white!important}.hero-section{padding:8rem 0 4rem;background-color:#f8f9fa}.hero-section h1{font-display:swap;font-weight:700;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}.hero-section .lead{font-display:swap;font-weight:500;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}section{padding:4rem 0}.card{border:none;box-shadow:0 2px 4px rgba(0,0,0,.1);transition:transform .2s}.card:hover{transform:translateY(-5px)}.footer{background-color:var(--dark-color);color:white;padding:2rem 0}.text-primary{color:var(--primary-color)!important}.bg-light{background-color:#f8f9fa!important}.btn-primary{background-color:var(--primary-color);border-color:var(--primary-color);color:#fff;font-weight:600}.btn-primary:hover{background-color:var(--primary-hover);border-color:var(--primary-hover);color:#fff} 
+:root{--primary-color:#0056b3;--secondary-color:#6c757d;--dark-color:#343a40;--primary-hover:#004494}
+
+/* ナビゲーション - ビューポート内 */
+.navbar{background-color:var(--dark-color);padding:1rem 0}
+.navbar-brand{font-weight:700;color:white}
+.nav-link{color:rgba(255,255,255,.8)!important}
+.nav-link:hover{color:white!important}
+
+/* ヒーローセクション - ビューポート内 */
+.hero-section{padding:8rem 0 4rem;background-color:#f8f9fa}
+.hero-section h1{font-display:swap;font-weight:700;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;content-visibility:auto;contain-intrinsic-size:0 60px}
+.hero-section .lead{font-display:swap;font-weight:700;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;content-visibility:auto;contain-intrinsic-size:0 30px}
+
+/* ボタン - ビューポート内 */
+.btn-primary{background-color:var(--primary-color);border-color:var(--primary-color);color:#fff;font-weight:600}
+.btn-primary:hover{background-color:var(--primary-hover);border-color:var(--primary-hover);color:#fff}
+
+section{padding:4rem 0}.card{border:none;box-shadow:0 2px 4px rgba(0,0,0,.1);transition:transform .2s}.card:hover{transform:translateY(-5px)}.footer{background-color:var(--dark-color);color:white;padding:2rem 0}.text-primary{color:var(--primary-color)!important}.bg-light{background-color:#f8f9fa!important} 

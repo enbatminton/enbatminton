@@ -73,6 +73,7 @@
     
     .navbar {
       background-color: var(--secondary-color);
+      z-index: 1030;
     }
     
     .navbar-brand {
@@ -91,10 +92,19 @@
     
     .navbar-toggler {
       border-color: white;
+      z-index: 1031;
+    }
+    
+    .navbar-toggler:focus {
+      box-shadow: none;
     }
     
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    
+    .navbar-collapse {
+      z-index: 1030;
     }
     
     .hero-section {
@@ -212,48 +222,6 @@
               <div class="card schedule-card h-100 shadow-sm">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-start">
-                    <h5 class="card-title">6/7(土)</h5>
-                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="badge bg-primary">18:00～21:00</span>
-                  </div>
-                  <p class="card-text">板橋区体育館</p>
-                </div>
-              </div>
-            </div>
-            <div class="schedule-col">
-              <div class="card schedule-card h-100 shadow-sm">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-start">
-                    <h5 class="card-title">6/14(土)</h5>
-                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="badge bg-primary">16:00～18:00</span>
-                  </div>
-                  <p class="card-text">練馬区体育館</p>
-                </div>
-              </div>
-            </div>
-            <div class="schedule-col">
-              <div class="card schedule-card h-100 shadow-sm">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-start">
-                    <h5 class="card-title">6/15(日)</h5>
-                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="badge bg-primary">9:00～12:00</span>
-                  </div>
-                  <p class="card-text">新宿体育館</p>
-                </div>
-              </div>
-            </div>
-            <div class="schedule-col">
-              <div class="card schedule-card h-100 shadow-sm">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-start">
                     <h5 class="card-title">6/22(日)</h5>
                     <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
                   </div>
@@ -261,6 +229,21 @@
                     <span class="badge bg-primary">18:00～21:30</span>
                   </div>
                   <p class="card-text">江東区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">6/27(金)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">18:30～21:30</span>
+                    <span class="badge bg-info">平日開催</span>
+                  </div>
+                  <p class="card-text">練馬区体育館</p>
                 </div>
               </div>
             </div>
@@ -288,7 +271,107 @@
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <span class="badge bg-primary">19:30～22:00</span>
                   </div>
-                  <p class="card-text">新宿体育館</p>
+                  <p class="card-text">新宿区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/5(土)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">18:00～21:00</span>
+                    <span class="badge bg-info">練習メイン</span>
+                  </div>
+                  <p class="card-text">新宿区江戸川小体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/8(火)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">18:00～21:00</span>
+                    <span class="badge bg-info">平日開催</span>
+                  </div>
+                  <p class="card-text">板橋区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/13(日)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">18:00～21:00</span>
+                  </div>
+                  <p class="card-text">新宿区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/19(土)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">18:00～21:30</span>
+                  </div>
+                  <p class="card-text">江東区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/21(月・祝)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">13:00～17:00</span>
+                  </div>
+                  <p class="card-text">新宿区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/26(土)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">9:00～12:00</span>
+                  </div>
+                  <p class="card-text">板橋区体育館</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">7/27(日)</h5>
+                    <i class="fas fa-table-tennis-paddle-ball fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">18:00～21:00</span>
+                  </div>
+                  <p class="card-text">新宿区体育館</p>
                 </div>
               </div>
             </div>
@@ -297,6 +380,78 @@
       </div>
     </div>
   </section>
+
+  <!-- DDT Pro Wrestling Calendar Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="text-center mb-4">DDT Pro Wrestling スケジュール</h2>
+          <p class="text-center text-muted mb-4">DDTプロレスの最新スケジュールをご確認ください。</p>
+          
+          <div class="schedule-row">
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">6/11(火)</h5>
+                    <i class="fas fa-wrestling fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">上野大会</span>
+                  </div>
+                  <p class="card-text">MAO with KIMIHIRO vs 秋山&青木</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">6/18(火)</h5>
+                    <i class="fas fa-wrestling fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">新宿大会</span>
+                  </div>
+                  <p class="card-text">CHARISMANIA Ⅱ</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">6/25(火)</h5>
+                    <i class="fas fa-wrestling fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">新宿大会</span>
+                  </div>
+                  <p class="card-text">M&Aプロレス</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-col">
+              <div class="card schedule-card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title">6/29(土)</h5>
+                    <i class="fas fa-wrestling fa-lg text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary">後楽園大会</span>
+                  </div>
+                  <p class="card-text">MxM Collection vs ディーノ&平田</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <a class="pagetop" href="#">
     <div class="pagetop__arrow"></div>
   </a>
@@ -306,6 +461,26 @@
     </div>
   </footer>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Ensure Bootstrap is properly loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Bootstrap components
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      
+      // Ensure navbar toggler works
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+      
+      if (navbarToggler && navbarCollapse) {
+        navbarToggler.addEventListener('click', function() {
+          navbarCollapse.classList.toggle('show');
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

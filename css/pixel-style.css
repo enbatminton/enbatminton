@@ -656,4 +656,110 @@ html {
 
 .story-panel {
   animation: fadeIn 0.5s ease-out;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.faq-content {
+  margin-top: 2rem;
+}
+
+.faq-intro {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.faq-preview-item {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-preview-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.faq-preview-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.preview-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.faq-preview-item h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+.faq-preview-item p {
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive FAQ */
+@media (max-width: 768px) {
+  .faq-preview {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .faq-preview-item {
+    padding: 1.5rem;
+  }
+  
+  .preview-icon {
+    font-size: 2.5rem;
+  }
+  
+  .faq-preview-item h3 {
+    font-size: 0.9rem;
+  }
+  
+  .faq-preview-item p {
+    font-size: 1rem;
+  }
 } 

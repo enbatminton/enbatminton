@@ -78,6 +78,16 @@ function scrollToCommunity() {
     });
 }
 
+// Scroll to FAQ section
+function scrollToFAQ() {
+    console.log('Scrolling to FAQ...');
+    const faqSection = document.getElementById('faq');
+    faqSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
 // Show specific story panel
 function showStoryPanel(panelNumber) {
     // Hide all panels

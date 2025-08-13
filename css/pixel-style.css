@@ -521,6 +521,12 @@ body {
   margin-bottom: 1rem;
 }
 
+.last-updated {
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
 /* Floating Elements */
 .floating-elements {
   position: fixed;
@@ -717,6 +723,67 @@ html {
 
 .story-panel {
   animation: fadeIn 0.5s ease-out;
+}
+
+/* Schedule Section */
+.schedule-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+  position: relative;
+}
+
+.schedule-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.schedule-content {
+  margin-top: 2rem;
+}
+
+.schedule-intro {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.schedule-preview-item {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.schedule-preview-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.schedule-preview-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* FAQ Section */

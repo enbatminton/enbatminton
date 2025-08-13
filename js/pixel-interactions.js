@@ -116,6 +116,16 @@ function scrollToFAQ() {
     });
 }
 
+// Scroll to Schedule section
+function scrollToSchedule() {
+    console.log('Scrolling to Schedule...');
+    const scheduleSection = document.getElementById('schedule');
+    scheduleSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
 // Show specific story panel
 function showStoryPanel(panelNumber) {
     // Hide all panels

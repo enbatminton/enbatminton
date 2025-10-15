@@ -3,14 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>エンバド | 東京のバドミントンサークル | 初心者大歓迎</title>
-  <meta name="description" content="東京(新宿区、練馬区、板橋区、江東区、豊島区)で活動するバドミントンサークル「エンバド」。初心者から経験者まで、年齢・性別問わず楽しめるバドミントンサークルです。">
+  <title>エンバド | 東京のバドミントンサークル | 初心者・経験者歓迎</title>
+  <meta name="description" content="東京23区で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎・週末活動・キャッシュレス決済対応。新宿区、練馬区、板橋区、江東区、豊島区で開催中。参加費800-1000円。">
+  <meta name="keywords" content="バドミントン,サークル,東京,新宿区,練馬区,板橋区,江東区,豊島区,初心者,週末,スポーツ,運動,仲間,コミュニティ">
   
   <!-- Performance and SEO optimizations -->
   <meta name="theme-color" content="#667eea">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://enbatminton.com/">
-  <meta name="last-modified" content="2025-08-13">
+  <meta name="last-modified" content="2025-01-15">
+  
+  <!-- Enhanced Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "エンバド - 東京のバドミントンサークル",
+    "description": "東京(新宿区、練馬区、板橋区、江東区、豊島区)で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎で、年齢・性別問わず楽しめるバドミントンサークルです。",
+    "url": "https://enbatminton.com",
+    "telephone": "no number",
+    "email": "info@enbatminton.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "東京",
+      "addressRegion": "東京都",
+      "addressCountry": "JP"
+    },
+    "sport": "バドミントン",
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "初心者・経験者歓迎",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification", 
+        "name": "キャッシュレス決済対応",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "レンタルラケット",
+        "value": true
+      }
+    ],
+    "openingHours": "Sa,Su 09:00-21:00",
+    "priceRange": "800-1000円",
+    "paymentAccepted": ["PayPay", "auPay", "楽天Pay", "現金"]
+  }
+  </script>
   
   <!-- DNS prefetch for external resources -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -32,7 +73,8 @@
     .hero-section{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);position:relative;overflow:hidden}
     .hero-content{text-align:center;z-index:2;position:relative}
     .pixel-title{font-family:'Press Start 2P',cursive;font-size:3rem;color:#fff;text-shadow:3px 3px 0 #000;margin-bottom:1rem;text-align:center}
-    .pixel-subtitle{font-family:'VT323',monospace;font-size:1.5rem;color:#fff;text-shadow:2px 2px 0 #000;text-align:center;margin-bottom:2rem}
+    .pixel-subtitle{font-family:'VT323',monospace;font-size:1.5rem;color:#fff;text-shadow:2px 2px 0 #000;text-align:center;margin-bottom:1rem}
+    .hero-description{font-family:'VT323',monospace;font-size:1.2rem;color:#fff;text-shadow:1px 1px 0 #000;text-align:center;margin-bottom:2rem;opacity:0.9}
     .hero-character{margin:2rem 0;display:flex;justify-content:center}
     .character-sprite{width:80px;height:80px;position:relative;animation:bounce 2s infinite}
     .character-body{width:60px;height:60px;background:#ff6b6b;border-radius:50%;position:absolute;top:10px;left:10px;border:3px solid #333}
@@ -42,6 +84,7 @@
     .pixel-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,.3)}
     .primary-btn{background:linear-gradient(45deg,#ff6b6b,#ee5a24);color:#fff;border-color:#ff6b6b}
     .primary-btn:hover{background:linear-gradient(45deg,#ee5a24,#ff6b6b)}
+    .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
     @media (max-width:768px){.pixel-title{font-size:2rem}.pixel-heading{font-size:1.2rem}.hamburger-menu{display:flex}.nav-menu{position:fixed;top:0;left:-100%;width:100%;height:100vh;background:rgba(0,0,0,.95);flex-direction:column;justify-content:center;align-items:center;gap:2rem;transition:left .3s ease;z-index:1000}.nav-menu.active{left:0}.nav-link{font-size:1.5rem;padding:1rem 2rem;border:2px solid #fff;width:80%;text-align:center}.nav-link:hover{background:rgba(255,255,255,.2)}}
   </style>
   
@@ -63,7 +106,10 @@
   <nav class="pixel-nav">
     <div class="nav-container">
       <div class="nav-logo">
-        <img src="./images/ennbado_logo.png" alt="エンバド" class="pixel-logo" width="120" height="40" loading="eager">
+        <picture>
+          <source srcset="./images/ennbado_logo.webp" type="image/webp">
+          <img src="./images/ennbado_logo.png" alt="エンバド" class="pixel-logo" width="120" height="40" loading="eager">
+        </picture>
       </div>
       <div class="nav-menu" id="navMenu">
         <a href="#community" class="nav-link">サークルの特徴</a>
@@ -85,13 +131,17 @@
     <div class="hero-content">
       <h1 class="pixel-title">エンバド</h1>
       <p class="pixel-subtitle">東京のバドミントンサークル</p>
+      <p class="hero-description">初心者・経験者歓迎・週末活動・参加費800-1000円</p>
       <div class="hero-character">
         <div class="character-sprite" id="mainCharacter">
           <div class="character-body"></div>
           <div class="character-racket"></div>
         </div>
       </div>
-      <button class="pixel-btn primary-btn" onclick="scrollToCommunity()">サークルの特徴を見る</button>
+      <div class="hero-actions">
+        <button class="pixel-btn primary-btn" onclick="scrollToCommunity()">サークルの特徴を見る</button>
+        <a href="https://band.us/n/afabAcPad6Nbw" class="pixel-btn" target="_blank" rel="noopener" style="background: #28a745; color: #fff; margin-left: 1rem;">今すぐ参加する</a>
+      </div>
     </div>
   </section>
 
@@ -108,12 +158,12 @@
         <div class="community-card">
           <div class="card-icon">💳</div>
           <h3>キャッシュレス決済</h3>
-          <p>PayPay、auPay、楽天Pay対応</p>
+          <p>PayPay、auPay、楽天Pay対応<br><strong>参加費：800-1000円</strong></p>
         </div>
         <div class="community-card">
           <div class="card-icon">📱</div>
           <h3>LINE公式</h3>
-          <p>最新スケジュールを配信</p>
+          <p>最新スケジュールを配信<br>質問・相談も受付中</p>
         </div>
         <div class="community-card">
           <div class="card-icon">🎯</div>
@@ -122,13 +172,13 @@
         </div>
         <div class="community-card">
           <div class="card-icon">👥</div>
-          <h3>初心者大歓迎</h3>
-          <p>バドミントン未経験の方も参加可能です。</p>
+          <h3>初心者・経験者歓迎</h3>
+          <p>バドミントン未経験の方から経験者まで幅広く参加可能です。レンタルラケットも用意しています。</p>
         </div>
         <div class="community-card">
           <div class="card-icon">🌍</div>
           <h3>都内アクセス便利</h3>
-          <p>東京23区内で活動中</p>
+          <p>東京23区内で活動中<br>最寄り駅から徒歩圏内</p>
         </div>
       </div>
     </div>
@@ -267,6 +317,92 @@
       <button class="pixel-btn" onclick="closeModal()">閉じる</button>
     </div>
   </div>
+
+  <!-- Enhanced Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B0B76S4HVF', {
+      // Enhanced ecommerce tracking
+      send_page_view: true,
+      custom_map: {
+        'custom_parameter_1': 'conversion_type',
+        'custom_parameter_2': 'user_intent'
+      }
+    });
+
+    // Conversion tracking functions
+    function trackConversion(eventName, eventCategory, eventLabel, value) {
+      gtag('event', eventName, {
+        event_category: eventCategory,
+        event_label: eventLabel,
+        value: value,
+        custom_parameter_1: 'badminton_social',
+        custom_parameter_2: 'participation_intent'
+      });
+    }
+
+    // Track BAND participation clicks
+    function trackBANDClick() {
+      trackConversion('band_participation_click', 'engagement', 'band_link', 1);
+    }
+
+    // Track schedule page visits
+    function trackScheduleVisit() {
+      trackConversion('schedule_page_visit', 'navigation', 'schedule_link', 1);
+    }
+
+    // Track FAQ page visits
+    function trackFAQVisit() {
+      trackConversion('faq_page_visit', 'navigation', 'faq_link', 1);
+    }
+
+    // Track contact form interactions
+    function trackContactInteraction(method) {
+      trackConversion('contact_interaction', 'engagement', method, 1);
+    }
+
+    // Track scroll depth
+    function trackScrollDepth() {
+      let maxScroll = 0;
+      window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
+          maxScroll = scrollPercent;
+          trackConversion('scroll_depth', 'engagement', scrollPercent + '%', scrollPercent);
+        }
+      });
+    }
+
+    // Initialize tracking
+    document.addEventListener('DOMContentLoaded', function() {
+      trackScrollDepth();
+      
+      // Track button clicks
+      document.querySelectorAll('a[href*="band.us"]').forEach(link => {
+        link.addEventListener('click', trackBANDClick);
+      });
+      
+      document.querySelectorAll('a[href*="schedule"]').forEach(link => {
+        link.addEventListener('click', trackScheduleVisit);
+      });
+      
+      document.querySelectorAll('a[href*="qa"]').forEach(link => {
+        link.addEventListener('click', trackFAQVisit);
+      });
+      
+      // Track contact method clicks
+      document.querySelectorAll('a[href*="lin.ee"]').forEach(link => {
+        link.addEventListener('click', () => trackContactInteraction('line'));
+      });
+      
+      document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', () => trackContactInteraction('email'));
+      });
+    });
+  </script>
 
   <!-- JavaScript -->
   <script src="./js/pixel-interactions.js" defer></script>

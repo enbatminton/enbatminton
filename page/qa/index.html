@@ -498,7 +498,7 @@
       <div class="container">
         <h2 class="mb-4">他質問がある場合は</h2>
         <p class="mb-4">公式LINEでお問い合わせください。</p>
-        <a href="https://lin.ee/qPQZFcK" class="btn btn-primary btn-lg">LINEで質問する</a>
+        <a href="https://lin.ee/qPQZFcK" class="btn btn-primary btn-lg" onclick="trackFAQContactClick('line')">LINEで質問する</a>
       </div>
     </section>
   </main>
@@ -512,6 +512,36 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   
+  <!-- Enhanced tracking for FAQ page -->
+  <script>
+    function trackFAQInteraction(action, details) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'faq_interaction', {
+          event_category: 'faq_page',
+          event_label: action,
+          value: 1,
+          custom_parameter_1: 'badminton_social',
+          custom_parameter_2: details
+        });
+      }
+    }
+
+    // Track search queries
+    function trackSearchQuery(query) {
+      trackFAQInteraction('search_query', query);
+    }
+
+    // Track FAQ item clicks
+    function trackFAQItemClick(question) {
+      trackFAQInteraction('faq_item_click', question);
+    }
+
+    // Track contact clicks from FAQ
+    function trackFAQContactClick(method) {
+      trackFAQInteraction('contact_click_from_faq', method);
+    }
+  </script>
+
   <!-- 検索機能のJavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -573,7 +603,12 @@
       }
 
       // 検索入力時のイベント
-      searchInput.addEventListener('input', performSearch);
+      searchInput.addEventListener('input', function() {
+        performSearch();
+        if (searchInput.value.trim().length > 2) {
+          trackSearchQuery(searchInput.value.trim());
+        }
+      });
 
       // クリアボタンのイベント
       clearButton.addEventListener('click', function() {

@@ -1,8 +1,41 @@
+# Robots.txt for enbatminton.com
+# Last updated: 2025-01-15
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Specific directives for major search engines
 User-agent: Googlebot
-Sitemap: https://www.enbatminton.com/sitemap.xml
+Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block access to sensitive directories (if any exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+
+# Block access to common files that shouldn't be indexed
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+
+# Allow access to important files
+Allow: /page/manual/procedure_for_adding_circle_members.pdf
+
+# Sitemap location
 Sitemap: https://www.enbatminton.com/sitemap.xml
 
-User-agent: ClaudeBot
+# Additional sitemap for better indexing
 Sitemap: https://www.enbatminton.com/sitemap.xml

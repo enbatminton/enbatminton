@@ -37,5 +37,5 @@ Allow: /page/manual/procedure_for_adding_circle_members.pdf
 # Sitemap location
 Sitemap: https://www.enbatminton.com/sitemap.xml
 
-# Additional sitemap for better indexing
-Sitemap: https://www.enbatminton.com/sitemap.xml
+# RSS Feed
+Sitemap: https://www.enbatminton.com/feed.xml

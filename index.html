@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>エンバド | 東京のバドミントンサークル | 初心者・経験者歓迎</title>
-  <meta name="description" content="東京23区で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎・週末活動・キャッシュレス決済対応。新宿区、練馬区、板橋区、江東区、豊島区で開催中。参加費800-1000円。">
-  <meta name="keywords" content="バドミントン,サークル,東京,新宿区,練馬区,板橋区,江東区,豊島区,初心者,週末,スポーツ,運動,仲間,コミュニティ">
+  <meta name="description" content="東京23区で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎・週末活動・キャッシュレス決済対応。新宿区、練馬区、板橋区、江東区、豊島区で開催中。参加費800-1000円。レンタルラケット・シューズ対応。">
+  <meta name="keywords" content="バドミントン,サークル,東京,新宿区,練馬区,板橋区,江東区,豊島区,初心者,週末,スポーツ,運動,仲間,コミュニティ,レンタル,ラケット,シューズ">
   
   <!-- Performance and SEO optimizations -->
   <meta name="theme-color" content="#667eea">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://enbatminton.com/">
   <meta name="last-modified" content="2025-01-15">
+  <meta name="author" content="エンバド">
+  <meta name="geo.region" content="JP-13">
+  <meta name="geo.placename" content="東京">
+  <meta name="geo.position" content="35.6762;139.6503">
+  <meta name="ICBM" content="35.6762, 139.6503">
+  <meta name="language" content="ja">
+  <meta name="revisit-after" content="1 days">
   
   <!-- Enhanced Structured Data -->
   <script type="application/ld+json">
@@ -49,7 +56,7 @@
     ],
     "openingHours": "Sa,Su 09:00-21:00",
     "priceRange": "800-1000円",
-    "paymentAccepted": ["PayPay", "auPay", "楽天Pay", "現金"]
+    "paymentAccepted": ["PayPay", "auPay", "楽天Pay", "現金", "iD", "QuicPay", "交通系電子マネー", "ことら送金", "みんなの銀行"]
   }
   </script>
   
@@ -80,10 +87,10 @@
     .character-body{width:60px;height:60px;background:#ff6b6b;border-radius:50%;position:absolute;top:10px;left:10px;border:3px solid #333}
     .character-racket{width:40px;height:8px;background:#4ecdc4;position:absolute;top:20px;right:-10px;border:2px solid #333;border-radius:4px}
     @keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}60%{transform:translateY(-5px)}}
-    .pixel-btn{font-family:'Press Start 2P',cursive;font-size:.8rem;padding:1rem 2rem;border:3px solid #333;background:#4ecdc4;color:#333;cursor:pointer;transition:all .3s ease;text-decoration:none;display:inline-block;text-align:center}
+    .pixel-btn{font-family:'Press Start 2P',cursive;font-size:.8rem;padding:1rem 2rem;border:3px solid #333;background:#00695c;color:#fff;cursor:pointer;transition:all .3s ease;text-decoration:none;display:inline-block;text-align:center}
     .pixel-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,.3)}
-    .primary-btn{background:linear-gradient(45deg,#ff6b6b,#ee5a24);color:#fff;border-color:#ff6b6b}
-    .primary-btn:hover{background:linear-gradient(45deg,#ee5a24,#ff6b6b)}
+    .primary-btn{background:linear-gradient(45deg,#d32f2f,#b71c1c);color:#fff;border-color:#d32f2f}
+    .primary-btn:hover{background:linear-gradient(45deg,#b71c1c,#8b0000)}
     .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
     .rental-link{color:#667eea;text-decoration:none;font-size:0.9rem;font-weight:bold;border-bottom:1px solid #667eea;transition:all .3s ease}
     .rental-link:hover{color:#4a5bb8;border-bottom-color:#4a5bb8}
@@ -105,7 +112,7 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="pixel-nav">
+  <nav class="pixel-nav" role="navigation" aria-label="メインナビゲーション">
     <div class="nav-container">
       <div class="nav-logo">
         <picture>
@@ -128,8 +135,10 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
+  <!-- Main Content -->
+  <main role="main" aria-label="メインコンテンツ">
+    <!-- Hero Section -->
+    <section class="hero-section">
     <div class="hero-content">
       <h1 class="pixel-title">エンバド</h1>
       <p class="pixel-subtitle">東京のバドミントンサークル</p>
@@ -142,7 +151,7 @@
       </div>
       <div class="hero-actions">
         <button class="pixel-btn primary-btn" onclick="scrollToCommunity()">サークルの特徴を見る</button>
-        <a href="https://band.us/n/afabAcPad6Nbw" class="pixel-btn" target="_blank" rel="noopener" style="background: #28a745; color: #fff; margin-left: 1rem;">今すぐ参加する</a>
+        <a href="https://band.us/n/afabAcPad6Nbw" class="pixel-btn" target="_blank" rel="noopener" style="background: #1b5e20; color: #fff; margin-left: 1rem;">今すぐ参加する</a>
       </div>
     </div>
   </section>
@@ -298,9 +307,10 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="pixel-footer">
+  <footer class="pixel-footer" role="contentinfo">
     <div class="footer-content">
       <img src="./images/ennbado_logo.png" alt="エンバド" class="footer-logo" width="120" height="40" loading="lazy">
       <p>&copy; 2024 エンバド All Rights Reserved.</p>

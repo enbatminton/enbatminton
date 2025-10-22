@@ -8,8 +8,8 @@
     <copyright>© 2024 エンバド All Rights Reserved.</copyright>
     <managingEditor>info@enbatminton.com (エンバド)</managingEditor>
     <webMaster>info@enbatminton.com (エンバド)</webMaster>
-    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0900</lastBuildDate>
-    <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+    <lastBuildDate>Wed, 22 Oct 2025 09:48:36 +0900</lastBuildDate>
+    <pubDate>Wed, 22 Oct 2025 09:48:36 +0900</pubDate>
     <ttl>60</ttl>
     <image>
       <url>https://www.enbatminton.com/images/enbatminton.png</url>
@@ -18,12 +18,15 @@
       <width>144</width>
       <height>144</height>
     </image>
+    <atom:link href="https://www.enbatminton.com/atom.xml" rel="self" type="application/atom+xml"/>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+    <atom:link href="https://www.enbatminton.com/feed.xml" rel="self"/>
     
     <item>
       <title>エンバド - 東京のバドミントンサークル</title>
       <link>https://www.enbatminton.com/</link>
       <description>東京23区で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎・週末活動・キャッシュレス決済対応。新宿区、練馬区、板橋区、江東区、豊島区で開催中。参加費800-1000円。レンタルラケット・シューズ対応。</description>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+      <pubDate>Wed, 22 Oct 2025 09:48:36 +0900</pubDate>
       <guid isPermaLink="true">https://www.enbatminton.com/</guid>
     </item>
     
@@ -31,7 +34,7 @@
       <title>よくある質問 - エンバド</title>
       <link>https://www.enbatminton.com/page/qa/</link>
       <description>エンバドに関するよくある質問と回答をご紹介します。メンバーについて、参加について、持ち物について、料金について、注意事項について、SNS(連絡先)について、保険について。</description>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+      <pubDate>Wed, 22 Oct 2025 09:48:36 +0900</pubDate>
       <guid isPermaLink="true">https://www.enbatminton.com/page/qa/</guid>
     </item>
     
@@ -39,7 +42,7 @@
       <title>スケジュール - エンバド</title>
       <link>https://www.enbatminton.com/page/schedule/</link>
       <description>エンバドの活動スケジュールをご確認いただけます。江東区、新宿区、中野区で活動予定。朝・夕方・夜の時間帯で開催。</description>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+      <pubDate>Wed, 22 Oct 2025 09:48:36 +0900</pubDate>
       <guid isPermaLink="true">https://www.enbatminton.com/page/schedule/</guid>
     </item>
     
@@ -47,7 +50,7 @@
       <title>参加マニュアル - エンバド</title>
       <link>https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.pdf</link>
       <description>エンバドへの参加方法について詳しく説明したマニュアルです。BANDアプリでの参加手順をPDFでご確認いただけます。</description>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+      <pubDate>Wed, 22 Oct 2025 09:48:36 +0900</pubDate>
       <guid isPermaLink="true">https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.pdf</guid>
     </item>
   </channel>

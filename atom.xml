@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>エンバド - 東京のバドミントンサークル</title>
+  <link href="https://www.enbatminton.com/" rel="self"/>
+  <link href="https://www.enbatminton.com/"/>
+  <link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+  <id>https://www.enbatminton.com/</id>
+  <updated>2025-10-22T00:48:36+09:00</updated>
+  <author>
+    <name>エンバド</name>
+    <email>enbatminton@gmail.com</email>
+  </author>
+  <rights>© 2024 エンバド All Rights Reserved.</rights>
+  <subtitle>東京23区で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎・週末活動・キャッシュレス決済対応。新宿区、練馬区、板橋区、江東区、豊島区で開催中。</subtitle>
+  <logo>https://www.enbatminton.com/images/enbatminton.png</logo>
+  
+  <entry>
+    <title>エンバド - 東京のバドミントンサークル</title>
+    <link href="https://www.enbatminton.com/"/>
+    <id>https://www.enbatminton.com/</id>
+    <updated>2025-10-22T00:48:36+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>東京23区で活動するバドミントンサークル「エンバド」。初心者・経験者歓迎・週末活動・キャッシュレス決済対応。新宿区、練馬区、板橋区、江東区、豊島区で開催中。参加費800-1000円。レンタルラケット・シューズ対応。</summary>
+  </entry>
+  
+  <entry>
+    <title>よくある質問 - エンバド</title>
+    <link href="https://www.enbatminton.com/page/qa/"/>
+    <id>https://www.enbatminton.com/page/qa/</id>
+    <updated>2025-10-22T00:48:36+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>エンバドに関するよくある質問と回答をご紹介します。メンバーについて、参加について、持ち物について、料金について、注意事項について、SNS(連絡先)について、保険について。</summary>
+  </entry>
+  
+  <entry>
+    <title>スケジュール - エンバド</title>
+    <link href="https://www.enbatminton.com/page/schedule/"/>
+    <id>https://www.enbatminton.com/page/schedule/</id>
+    <updated>2025-10-22T00:48:36+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>エンバドの活動スケジュールをご確認いただけます。江東区、新宿区、中野区で活動予定。朝・夕方・夜の時間帯で開催。</summary>
+  </entry>
+  
+  <entry>
+    <title>参加マニュアル - エンバド</title>
+    <link href="https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.pdf"/>
+    <id>https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.pdf</id>
+    <updated>2025-10-22T00:48:36+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>エンバドへの参加方法について詳しく説明したマニュアルです。BANDアプリでの参加手順をPDFでご確認いただけます。</summary>
+  </entry>
+</feed>

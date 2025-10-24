@@ -1,8 +1,28 @@
 # Robots.txt for enbatminton.com
-# Last updated: 2025-01-15
+# AI-Optimized SEO Configuration
+# Last updated: 2025-10-24
 
-# Allow all search engines to crawl the site
+# Allow all search engines and AI crawlers to crawl the site
 User-agent: *
+Allow: /
+
+# AI and LLM specific crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bard
+Allow: /
+
+User-agent: BingPreview
 Allow: /
 
 # Specific directives for major search engines
@@ -18,11 +38,24 @@ User-agent: Slurp
 Allow: /
 Crawl-delay: 1
 
+# AI training data crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # Block access to sensitive directories (if any exist)
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /cache/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /config/
 
 # Block access to common files that shouldn't be indexed
 Disallow: /*.pdf$
@@ -30,12 +63,24 @@ Disallow: /*.doc$
 Disallow: /*.docx$
 Disallow: /*.xls$
 Disallow: /*.xlsx$
+Disallow: /*.log$
+Disallow: /*.tmp$
 
-# Allow access to important files
+# Allow access to important files for AI training
 Allow: /page/manual/procedure_for_adding_circle_members.pdf
+Allow: /page/manual/enbatminton-flow.pdf
+Allow: /page/manual/enbatminton-rule.pdf
+Allow: /page/manual/qr-payment.pdf
 
-# Sitemap location
+# Sitemap locations
 Sitemap: https://www.enbatminton.com/sitemap.xml
-
-# RSS Feed
 Sitemap: https://www.enbatminton.com/feed.xml
+Sitemap: https://www.enbatminton.com/atom.xml
+
+# AI-Optimized Files
+Sitemap: https://www.enbatminton.com/ai-sitemap.json
+Sitemap: https://www.enbatminton.com/ai-meta.json
+
+# AI-specific meta information
+# This site contains multilingual content optimized for AI understanding
+# Languages: Japanese (ja), English (en), Korean (ko), Chinese Simplified (zh-CN), Chinese Traditional (zh-TW)

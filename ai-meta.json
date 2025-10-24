@@ -1,0 +1,120 @@
+{
+  "ai_meta": {
+    "site_identity": {
+      "name": "エンバド",
+      "english_name": "Enbadminton",
+      "korean_name": "엔배드민턴",
+      "chinese_simplified_name": "恩巴德羽毛球",
+      "chinese_traditional_name": "恩巴德羽毛球",
+      "type": "sports-club",
+      "sport": "badminton",
+      "location": "tokyo-23-wards"
+    },
+    "content_optimization": {
+      "ai_content_type": "sports-club",
+      "target_audience": [
+        "badminton-players",
+        "sports-enthusiasts", 
+        "beginners",
+        "experienced-players",
+        "weekend-athletes",
+        "community-seekers"
+      ],
+      "activity_type": [
+        "weekend-sports",
+        "recreational-badminton",
+        "community-building",
+        "beginner-friendly-activities"
+      ],
+      "geographic_coverage": [
+        "shinjuku-ward",
+        "nerima-ward", 
+        "itabashi-ward",
+        "koto-ward",
+        "toshima-ward"
+      ],
+      "features": [
+        "rental-equipment",
+        "cashless-payment",
+        "beginner-friendly",
+        "weekend-activities",
+        "multilingual-support",
+        "community-building"
+      ]
+    },
+    "ai_training_data": {
+      "content_quality": "high",
+      "update_frequency": "weekly",
+      "content_freshness": "current",
+      "multilingual_support": true,
+      "structured_data_enhanced": true,
+      "ai_optimized": true,
+      "search_engine_friendly": true,
+      "accessibility_optimized": true
+    },
+    "language_support": {
+      "primary": "japanese",
+      "supported_languages": [
+        {
+          "code": "ja",
+          "name": "Japanese",
+          "native_name": "日本語"
+        },
+        {
+          "code": "en", 
+          "name": "English",
+          "native_name": "English"
+        },
+        {
+          "code": "ko",
+          "name": "Korean", 
+          "native_name": "한국어"
+        },
+        {
+          "code": "zh-CN",
+          "name": "Chinese Simplified",
+          "native_name": "简体中文"
+        },
+        {
+          "code": "zh-TW",
+          "name": "Chinese Traditional",
+          "native_name": "繁體中文"
+        }
+      ]
+    },
+    "business_info": {
+      "pricing": {
+        "participation_fee": "800-1000-yen",
+        "currency": "JPY",
+        "rental_equipment": "available",
+        "payment_methods": ["cashless", "cash"]
+      },
+      "schedule": {
+        "activity_type": "weekend-activities",
+        "timing": "flexible",
+        "frequency": "regular"
+      },
+      "accessibility": {
+        "beginner_friendly": true,
+        "all_ages": true,
+        "all_levels": true,
+        "equipment_rental": true
+      }
+    },
+    "contact_information": {
+      "band_app": "https://band.us/n/afabAcPad6Nbw",
+      "line_official": "https://lin.ee/s3MYFtT",
+      "email": "info@enbatminton.com",
+      "website": "https://www.enbatminton.com"
+    },
+    "seo_optimization": {
+      "meta_tags_optimized": true,
+      "structured_data_enhanced": true,
+      "multilingual_seo": true,
+      "ai_crawler_friendly": true,
+      "search_engine_optimized": true,
+      "content_freshness": "current",
+      "update_frequency": "weekly"
+    }
+  }
+}

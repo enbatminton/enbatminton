@@ -1,0 +1,135 @@
+{
+  "ai_sitemap": {
+    "version": "1.0",
+    "last_updated": "2025-10-24T15:30:00+09:00",
+    "site_info": {
+      "name": "エンバド - 東京のバドミントンサークル",
+      "description": "東京23区で活動するバドミントンサークル。初心者・経験者歓迎、週末活動、キャッシュレス決済対応。",
+      "primary_language": "ja",
+      "supported_languages": ["ja", "en", "ko", "zh-CN", "zh-TW"],
+      "content_type": "sports-club",
+      "target_audience": ["badminton-players", "sports-enthusiasts", "beginners", "experienced-players"],
+      "geographic_scope": "tokyo-23-wards",
+      "activity_schedule": "weekend-activities"
+    },
+    "pages": [
+      {
+        "url": "https://www.enbatminton.com/",
+        "language": "ja",
+        "title": "エンバド - 東京のバドミントンサークル",
+        "content_type": "main-page",
+        "ai_optimized": true,
+        "structured_data": "enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/en.html",
+        "language": "en",
+        "title": "Enbadminton - Tokyo Badminton Club",
+        "content_type": "main-page",
+        "ai_optimized": true,
+        "structured_data": "enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/ko.html",
+        "language": "ko",
+        "title": "엔배드민턴 - 도쿄 배드민턴 클럽",
+        "content_type": "main-page",
+        "ai_optimized": true,
+        "structured_data": "enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/zh-cn.html",
+        "language": "zh-CN",
+        "title": "恩巴德羽毛球 - 东京羽毛球俱乐部",
+        "content_type": "main-page",
+        "ai_optimized": true,
+        "structured_data": "enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/zh-tw.html",
+        "language": "zh-TW",
+        "title": "恩巴德羽毛球 - 東京羽毛球俱樂部",
+        "content_type": "main-page",
+        "ai_optimized": true,
+        "structured_data": "enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/page/qa/",
+        "language": "ja",
+        "title": "よくある質問 - エンバド",
+        "content_type": "faq-page",
+        "ai_optimized": true,
+        "structured_data": "faq-enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/page/qa/en.html",
+        "language": "en",
+        "title": "Frequently Asked Questions - Enbadminton",
+        "content_type": "faq-page",
+        "ai_optimized": true,
+        "structured_data": "faq-enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/page/qa/ko.html",
+        "language": "ko",
+        "title": "자주 묻는 질문 - 엔배드민턴",
+        "content_type": "faq-page",
+        "ai_optimized": true,
+        "structured_data": "faq-enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/page/qa/zh-cn.html",
+        "language": "zh-CN",
+        "title": "常见问题 - 恩巴德羽毛球",
+        "content_type": "faq-page",
+        "ai_optimized": true,
+        "structured_data": "faq-enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      },
+      {
+        "url": "https://www.enbatminton.com/page/qa/zh-tw.html",
+        "language": "zh-TW",
+        "title": "常見問題 - 恩巴德羽毛球",
+        "content_type": "faq-page",
+        "ai_optimized": true,
+        "structured_data": "faq-enhanced",
+        "last_modified": "2025-10-24T15:30:00+09:00"
+      }
+    ],
+    "ai_optimization": {
+      "content_quality": "high",
+      "update_frequency": "weekly",
+      "multilingual_support": true,
+      "structured_data_enhanced": true,
+      "ai_training_optimized": true,
+      "search_engine_friendly": true,
+      "accessibility_optimized": true
+    },
+    "features": {
+      "rental_equipment": true,
+      "cashless_payment": true,
+      "beginner_friendly": true,
+      "weekend_activities": true,
+      "multilingual_support": true,
+      "community_building": true
+    },
+    "contact_methods": {
+      "band_app": "https://band.us/n/afabAcPad6Nbw",
+      "line_official": "https://lin.ee/s3MYFtT",
+      "email": "info@enbatminton.com"
+    },
+    "pricing": {
+      "participation_fee": "800-1000-yen",
+      "rental_equipment": "available",
+      "payment_methods": ["cashless", "cash"]
+    }
+  }
+}

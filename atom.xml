@@ -58,4 +58,40 @@
     <published>2025-01-15T00:00:00+09:00</published>
     <summary>エンバドへの参加方法について詳しく説明したマニュアルです。BANDアプリでの参加手順をPDFでご確認いただけます。</summary>
   </entry>
+  
+  <entry>
+    <title>Enbadminton - Tokyo Badminton Club</title>
+    <link href="https://www.enbatminton.com/en.html"/>
+    <id>https://www.enbatminton.com/en.html</id>
+    <updated>2025-10-24T14:00:00+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>Tokyo badminton club 'Enbadminton' active in Tokyo's 23 wards. Beginners and experienced players welcome. Weekend activities with cashless payment support. Active in Shinjuku, Nerima, Itabashi, Koto, and Toshima wards. Participation fee: 800-1000 yen. Racket and shoe rental available.</summary>
+  </entry>
+  
+  <entry>
+    <title>엔배드민턴 - 도쿄 배드민턴 클럽</title>
+    <link href="https://www.enbatminton.com/ko.html"/>
+    <id>https://www.enbatminton.com/ko.html</id>
+    <updated>2025-10-24T14:00:00+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>도쿄 23구에서 활동하는 배드민턴 클럽 '엔배드민턴'. 초보자·경험자 환영·주말 활동·캐시리스 결제 대응. 신주쿠구, 네리마구, 이타바시구, 고토구, 도시마구에서 개최 중. 참가비 800-1000엔. 대여 라켓·신발 대응.</summary>
+  </entry>
+  
+  <entry>
+    <title>恩巴德羽毛球 - 东京羽毛球俱乐部</title>
+    <link href="https://www.enbatminton.com/zh-cn.html"/>
+    <id>https://www.enbatminton.com/zh-cn.html</id>
+    <updated>2025-10-24T14:00:00+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>在东京23区活动的羽毛球俱乐部「恩巴德羽毛球」。欢迎初学者·有经验者·周末活动·支持无现金支付。在新宿区、练马区、板桥区、江东区、丰岛区举办中。参加费800-1000日元。提供球拍·球鞋租赁。</summary>
+  </entry>
+  
+  <entry>
+    <title>恩巴德羽毛球 - 東京羽毛球俱樂部</title>
+    <link href="https://www.enbatminton.com/zh-tw.html"/>
+    <id>https://www.enbatminton.com/zh-tw.html</id>
+    <updated>2025-10-24T14:00:00+09:00</updated>
+    <published>2025-01-15T00:00:00+09:00</published>
+    <summary>在東京23區活動的羽毛球俱樂部「恩巴德羽毛球」。歡迎初學者·有經驗者·週末活動·支援無現金支付。在新宿區、練馬區、板橋區、江東區、豐島區舉辦中。參加費800-1000日圓。提供球拍·球鞋租賃。</summary>
+  </entry>
 </feed>

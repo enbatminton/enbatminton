@@ -14,6 +14,9 @@ echo "🔄 エンバドフィード更新を開始します..."
 
 # 現在の日時を取得（RFC 2822形式）
 TIMESTAMP=$(date '+%a, %d %b %Y %H:%M:%S %z')
+ISO_TIMESTAMP=$(date '+%Y-%m-%dT%H:%M:%S+09:00')
+
+echo "📅 更新日時: $TIMESTAMP"
 
 # RSSフィードの更新
 echo "📝 RSSフィードを更新中..."
@@ -22,12 +25,22 @@ sed -i.bak "s/<pubDate>.*<\/pubDate>/<pubDate>$TIMESTAMP<\/pubDate>/" "$FEED_DIR
 
 # Atomフィードの更新
 echo "📝 Atomフィードを更新中..."
-sed -i.bak "s/<updated>.*<\/updated>/<updated>$(date -u '+%Y-%m-%dT%H:%M:%S+09:00')<\/updated>/" "$FEED_DIR/atom.xml"
+sed -i.bak "s/<updated>.*<\/updated>/<updated>$ISO_TIMESTAMP<\/updated>/" "$FEED_DIR/atom.xml"
+
+# サイトマップの更新
+echo "📝 サイトマップを更新中..."
+sed -i.bak "s/<lastmod>.*<\/lastmod>/<lastmod>$ISO_TIMESTAMP<\/lastmod>/" "$FEED_DIR/sitemap.xml"
 
 # バックアップファイルを削除
-rm -f "$FEED_DIR/feed.xml.bak" "$FEED_DIR/atom.xml.bak"
+rm -f "$FEED_DIR/feed.xml.bak" "$FEED_DIR/atom.xml.bak" "$FEED_DIR/sitemap.xml.bak"
 
 echo "✅ フィードファイルが更新されました"
+
+# 更新されたファイルの確認
+echo "📋 更新されたファイル:"
+echo "  - feed.xml"
+echo "  - atom.xml" 
+echo "  - sitemap.xml"
 
 # PubSubHubbubハブに通知
 echo "📡 PubSubHubbubハブに通知を送信中..."
@@ -42,3 +55,6 @@ else
 fi
 
 echo "🎉 フィード更新が完了しました！"
+echo "🌐 サイトマップ: $SITE_URL/sitemap.xml"
+echo "📰 RSSフィード: $SITE_URL/feed.xml"
+echo "📰 Atomフィード: $SITE_URL/atom.xml"

@@ -6,21 +6,21 @@
   <loc>https://www.enbatminton.com/</loc>
   <priority>1.0</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/page/qa/</loc>
   <priority>0.7</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/page/schedule/</loc>
   <priority>0.8</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <!-- English -->
@@ -28,14 +28,14 @@
   <loc>https://www.enbatminton.com/en.html</loc>
   <priority>0.9</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/page/qa/en.html</loc>
   <priority>0.6</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <!-- Korean -->
@@ -43,14 +43,14 @@
   <loc>https://www.enbatminton.com/ko.html</loc>
   <priority>0.9</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/page/qa/ko.html</loc>
   <priority>0.6</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <!-- Chinese Simplified -->
@@ -58,14 +58,14 @@
   <loc>https://www.enbatminton.com/zh-cn.html</loc>
   <priority>0.9</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/page/qa/zh-cn.html</loc>
   <priority>0.6</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <!-- Chinese Traditional -->
@@ -73,14 +73,14 @@
   <loc>https://www.enbatminton.com/zh-tw.html</loc>
   <priority>0.9</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/page/qa/zh-tw.html</loc>
   <priority>0.6</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <!-- Manual -->
@@ -88,7 +88,7 @@
   <loc>https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.pdf</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <!-- Feeds -->
@@ -96,14 +96,14 @@
   <loc>https://www.enbatminton.com/feed.xml</loc>
   <priority>0.3</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 <url>
   <loc>https://www.enbatminton.com/atom.xml</loc>
   <priority>0.3</priority>
   <changefreq>daily</changefreq>
-  <lastmod>2025-10-24T14:00:00+09:00</lastmod>
+  <lastmod>2025-10-24T15:07:09+09:00</lastmod>
 </url>
 
 </urlset>

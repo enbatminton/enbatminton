@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バドミントン初心者講義 | エンバド</title>
+  <meta name="description" content="バドミントンの初心者向け講義。基本から応用まで11講義でバドミントンの基礎を学べます。グリップ、フットワーク、ショット技術など、段階的に習得できます。">
+  <meta name="keywords" content="バドミントン,初心者,講義,レッスン,グリップ,フットワーク,サーブ,スマッシュ,ドロップ,クリアー">
+  
+  <!-- Performance and SEO optimizations -->
+  <meta name="theme-color" content="#667eea">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://enbatminton.com/page/lecture/">
+  <meta name="last-modified" content="2025-01-24">
+  <meta name="author" content="エンバド">
+  <meta name="language" content="ja">
+  
+  <!-- DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  
+  <!-- Critical CSS External -->
+  <link rel="stylesheet" href="../../css/critical.min.css">
+  
+  <!-- Preload non-critical CSS -->
+  <link rel="preload" href="../../css/pixel-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../../css/pixel-style.css"></noscript>
+  <link rel="preload" href="../../images/ennbado_logo.png" as="image">
+  
+  <!-- Google Fonts with display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+  
+  <!-- Lecture-specific styles -->
+  <style>
+    .lecture-section {
+      padding: 4rem 0;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    .lecture-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .lecture-intro {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .lecture-intro p {
+      font-family: 'VT323', monospace;
+      font-size: 1.3rem;
+      color: #666;
+      max-width: 800px;
+      margin: 2rem auto 0;
+      line-height: 1.8;
+    }
+
+    .lecture-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .lecture-card {
+      background: #fff;
+      border: 3px solid #333;
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .lecture-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+
+    .lecture-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .lecture-number {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.5rem;
+      color: #667eea;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 0px #333;
+    }
+
+    .lecture-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      min-height: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lecture-description {
+      font-family: 'VT323', monospace;
+      font-size: 1.1rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .back-to-home {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 2px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      .lecture-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .lecture-card {
+        padding: 1.5rem;
+      }
+      
+      .lecture-number {
+        font-size: 1.2rem;
+      }
+      
+      .lecture-title {
+        font-size: 0.9rem;
+        min-height: auto;
+      }
+      
+      .lecture-description {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="pixel-nav" role="navigation" aria-label="メインナビゲーション">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../../index.html">
+          <picture>
+            <source srcset="../../images/ennbado_logo.webp" type="image/webp">
+            <img src="../../images/ennbado_logo.png" alt="エンバド" class="pixel-logo" width="120" height="40" loading="eager">
+          </picture>
+        </a>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="../../index.html#community" class="nav-link">サークルの特徴</a>
+        <a href="../../index.html#join" class="nav-link">参加する</a>
+        <a href="../schedule/" class="nav-link">スケジュール</a>
+        <a href="../qa/" class="nav-link">よくある質問</a>
+        <a href="../../index.html#contact" class="nav-link">お問い合わせ</a>
+      </div>
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main role="main" aria-label="メインコンテンツ" style="padding-top: 80px;">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="pixel-title">バドミントン<br>初心者講義</h1>
+        <p class="pixel-subtitle">基礎から学ぶ11の講義</p>
+        <p class="hero-description">段階的にバドミントンの技術を習得しましょう</p>
+      </div>
+    </section>
+
+    <!-- Lecture Section -->
+    <section class="lecture-section">
+      <div class="lecture-container">
+        <div class="lecture-intro">
+          <h2 class="pixel-heading">講義一覧</h2>
+          <p>バドミントンの基本から応用まで、初心者の方が段階的に技術を習得できるよう、11の講義を用意しました。各講義では、グリップの握り方からフットワーク、各種ショット技術まで、実践的な内容を学ぶことができます。</p>
+        </div>
+
+        <div class="lecture-grid">
+          <!-- 第1講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第1講</div>
+            <h3 class="lecture-title">バドミントンの基本</h3>
+            <p class="lecture-description">バドミントンのルール、コートの広さ、基本的な動き方などを学びます。</p>
+          </div>
+
+          <!-- 第2講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第2講</div>
+            <h3 class="lecture-title">グリップの握り方</h3>
+            <p class="lecture-description">正しいラケットの握り方を習得します。フォアハンドグリップとバックハンドグリップを学びます。</p>
+          </div>
+
+          <!-- 第3講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第3講</div>
+            <h3 class="lecture-title">プレイスタイルと、ダブルスのセオリー</h3>
+            <p class="lecture-description">シングルスとダブルスの違い、ダブルスでの基本的なポジショニングと動き方を学びます。</p>
+          </div>
+
+          <!-- 第4講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第4講</div>
+            <h3 class="lecture-title">前のフットワーク<br>ロブ、ヘアピン</h3>
+            <p class="lecture-description">ネット前への移動方法と、ロブ・ヘアピンの基本的な打ち方を習得します。</p>
+          </div>
+
+          <!-- 第5講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第5講</div>
+            <h3 class="lecture-title">横2点のフットワーク</h3>
+            <p class="lecture-description">コートの左右への素早い移動方法と、サイドステップなどのフットワーク技術を学びます。</p>
+          </div>
+
+          <!-- 第6講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第6講</div>
+            <h3 class="lecture-title">後ろ2点のフットワーク</h3>
+            <p class="lecture-description">コート後方への移動方法と、バックステップなどのフットワーク技術を習得します。</p>
+          </div>
+
+          <!-- 第7講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第7講</div>
+            <h3 class="lecture-title">サーブとサーブレシーブ</h3>
+            <p class="lecture-description">正確なサーブの打ち方と、相手のサーブに対するレシーブの技術を学びます。</p>
+          </div>
+
+          <!-- 第8講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第8講</div>
+            <h3 class="lecture-title">ロブとヘアピン</h3>
+            <p class="lecture-description">ロブとヘアピンの詳細な打ち方、タイミング、コントロール方法を習得します。</p>
+          </div>
+
+          <!-- 第9講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第9講</div>
+            <h3 class="lecture-title">ドライブとプッシュ</h3>
+            <p class="lecture-description">速いボールを打つドライブと、ネット前で使うプッシュの技術を学びます。</p>
+          </div>
+
+          <!-- 第10講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第10講</div>
+            <h3 class="lecture-title">プッシュレシーブと<br>スマッシュレシーブ</h3>
+            <p class="lecture-description">プッシュとスマッシュに対する効果的なレシーブ方法を習得します。</p>
+          </div>
+
+          <!-- 第11講 -->
+          <div class="lecture-card">
+            <div class="lecture-number">第11講</div>
+            <h3 class="lecture-title">ドロップとスマッシュとクリアー</h3>
+            <p class="lecture-description">攻撃的なスマッシュ、コントロール重視のドロップ、後方へのクリアーの技術を学びます。</p>
+          </div>
+        </div>
+
+        <div class="back-to-home">
+          <a href="../../index.html" class="pixel-btn primary-btn">ホームに戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="pixel-footer" role="contentinfo">
+    <div class="footer-content">
+      <img src="../../images/ennbado_logo.png" alt="エンバド" class="footer-logo" width="120" height="40" loading="lazy">
+      <p>&copy; 2024 エンバド All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Elements -->
+  <div class="floating-elements">
+    <div class="floating-shuttlecock" id="shuttlecock1"></div>
+    <div class="floating-shuttlecock" id="shuttlecock2"></div>
+    <div class="floating-shuttlecock" id="shuttlecock3"></div>
+  </div>
+
+  <!-- Enhanced Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B0B76S4HVF');
+  </script>
+
+  <!-- JavaScript -->
+  <script src="../../js/pixel-interactions.js" defer></script>
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburgerMenu = document.getElementById('hamburgerMenu');
+      const navMenu = document.getElementById('navMenu');
+      
+      if (hamburgerMenu && navMenu) {
+        hamburgerMenu.addEventListener('click', function() {
+          hamburgerMenu.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+      }
+
+      // Close menu when clicking on a link
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburgerMenu.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

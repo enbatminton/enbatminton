@@ -48,10 +48,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(15px);
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -64,28 +65,60 @@ body {
 }
 
 .pixel-logo {
-  height: 40px;
+  height: 45px;
   image-rendering: pixelated;
+  transition: transform 0.3s ease;
+}
+
+.pixel-logo:hover {
+  transform: scale(1.05);
 }
 
 .nav-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
   font-family: 'VT323', monospace;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
   border: 2px solid transparent;
+  border-radius: 4px;
   transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #667eea;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .nav-link:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  background: rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+.nav-link:active {
+  transform: translateY(0);
 }
 
 /* Hamburger Menu */
@@ -386,6 +419,22 @@ body {
   color: #666;
 }
 
+.rental-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 2px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.rental-link:hover {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
 /* Join Section */
 .join-section {
   padding: 4rem 0;
@@ -639,6 +688,22 @@ body {
   display: none !important;
 }
 
+/* Desktop Navigation Enhancements */
+@media (min-width: 769px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.3rem;
+  }
+  
+  .pixel-nav {
+    padding: 1.3rem 0;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .pixel-title {
@@ -685,6 +750,10 @@ body {
     background: rgba(255, 255, 255, 0.2);
   }
   
+  .nav-link::before {
+    display: none;
+  }
+  
   .story-content {
     flex-direction: column;
   }
@@ -699,7 +768,8 @@ body {
   
   .community-grid,
   .join-options,
-  .contact-methods {
+  .contact-methods,
+  .lecture-preview {
     grid-template-columns: 1fr;
   }
 }
@@ -723,6 +793,67 @@ html {
 
 .story-panel {
   animation: fadeIn 0.5s ease-out;
+}
+
+/* Lecture Section */
+.lecture-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  position: relative;
+}
+
+.lecture-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.lecture-content {
+  margin-top: 2rem;
+}
+
+.lecture-intro {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lecture-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.lecture-preview-item {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.lecture-preview-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+}
+
+.lecture-preview-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Schedule Section */
@@ -866,6 +997,22 @@ html {
   font-size: 1.1rem;
   color: #666;
   line-height: 1.5;
+}
+
+/* Responsive Lecture */
+@media (max-width: 768px) {
+  .lecture-preview {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .lecture-preview-item {
+    padding: 1.5rem;
+  }
+  
+  .lecture-intro {
+    font-size: 1.1rem;
+  }
 }
 
 /* Responsive FAQ */

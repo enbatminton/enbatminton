@@ -1,0 +1,292 @@
+/* Practice Page Styles */
+
+.practice-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.practice-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.practice-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.practice-intro p {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #666;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  line-height: 1.8;
+}
+
+.practice-types {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.practice-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.practice-type-card {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.practice-type-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4caf50, #388e3c);
+}
+
+.practice-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.type-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.practice-type-card h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.practice-type-card p {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.practice-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.practice-feature {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.practice-feature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4caf50, #388e3c);
+}
+
+.practice-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.practice-feature h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.practice-feature p {
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.practice-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.content-box {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.content-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #4caf50;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+}
+
+.content-list li {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed #ccc;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.content-list li:last-child {
+  border-bottom: none;
+}
+
+.content-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.practice-links {
+  margin: 3rem 0;
+}
+
+.link-box {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.link-box h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.link-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.back-to-home {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+  .practice-features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .practice-feature {
+    padding: 1.5rem;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+  
+  .practice-feature h3 {
+    font-size: 0.9rem;
+  }
+  
+  .practice-feature p {
+    font-size: 1rem;
+  }
+  
+  .practice-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .content-box {
+    padding: 1.5rem;
+  }
+  
+  .content-list li {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .link-buttons {
+    flex-direction: column;
+  }
+  
+  .link-buttons .pixel-btn {
+    width: 100%;
+  }
+  
+  .practice-type-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .practice-type-card {
+    padding: 2rem;
+  }
+  
+  .type-icon {
+    font-size: 3rem;
+  }
+  
+  .practice-type-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .practice-type-card p {
+    font-size: 1rem;
+  }
+}
+

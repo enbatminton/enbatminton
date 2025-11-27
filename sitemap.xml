@@ -30,6 +30,20 @@
   <lastmod>2025-01-24T15:07:09+09:00</lastmod>
 </url>
 
+<url>
+  <loc>https://www.enbatminton.com/page/freestyle/</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2025-01-24T15:07:09+09:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.enbatminton.com/page/practice/</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2025-01-24T15:07:09+09:00</lastmod>
+</url>
+
 <!-- English -->
 <url>
   <loc>https://www.enbatminton.com/en.html</loc>

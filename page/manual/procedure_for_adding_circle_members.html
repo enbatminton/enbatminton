@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サークルメンバー追加手順 | エンバド</title>
+    <title>バドミントンサークル enバドの参加方法 | エンバド</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -18,6 +18,22 @@
             padding: 2rem 0;
             margin-bottom: 2rem;
         }
+        .section-card {
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: white;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
         .step-card {
             border: 1px solid #e9ecef;
             border-radius: 10px;
@@ -25,6 +41,7 @@
             margin-bottom: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: transform 0.2s ease;
+            background: #f8f9fa;
         }
         .step-card:hover {
             transform: translateY(-2px);
@@ -57,7 +74,7 @@
             margin-bottom: 1rem;
         }
         .step-details {
-            background: #f8f9fa;
+            background: white;
             padding: 1rem;
             border-radius: 5px;
             border-left: 4px solid #667eea;
@@ -69,16 +86,16 @@
             padding: 1rem;
             margin: 1rem 0;
         }
-        .warning-box {
-            background: #fff3e0;
-            border: 1px solid #ff9800;
+        .info-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
             border-radius: 8px;
             padding: 1rem;
             margin: 1rem 0;
         }
-        .success-box {
-            background: #e8f5e8;
-            border: 1px solid #4caf50;
+        .link-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
             border-radius: 8px;
             padding: 1rem;
             margin: 1rem 0;
@@ -92,6 +109,24 @@
             right: 20px;
             z-index: 1000;
         }
+        .qr-code-image {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table td {
+            padding: 0.5rem;
+            border: 1px solid #dee2e6;
+        }
+        .table-header {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -99,8 +134,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h1><i class="fas fa-users icon"></i>サークルメンバー追加手順</h1>
-                    <p class="mb-0">エンバドサークルへの新規メンバー追加に関する詳細な手順書</p>
+                    <h1><i class="fas fa-users icon"></i>バドミントンサークル enバドの参加方法</h1>
+                    <p class="mb-0">BANDアプリを使った参加手順の詳細ガイド</p>
                 </div>
                 <div class="col-md-4 text-end">
                     <a href="../qa/" class="btn btn-light">
@@ -113,170 +148,161 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
-                <div class="highlight-box">
-                    <h4><i class="fas fa-info-circle icon"></i>この手順書について</h4>
-                    <p>この手順書では、エンバドサークルに新しいメンバーを追加する際の詳細な手順を説明します。管理者権限が必要な作業も含まれますので、事前に確認してください。</p>
-                </div>
-
-                <div class="step-card">
-                    <div class="d-flex">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <div class="step-title">新規メンバーの情報収集</div>
-                            <div class="step-description">追加したいメンバーの基本情報を収集します</div>
-                            <div class="step-details">
-                                <h6>必要な情報：</h6>
-                                <ul>
-                                    <li>氏名（フルネーム）</li>
-                                    <li>連絡先（電話番号・メールアドレス）</li>
-                                    <li>バドミントン経験レベル</li>
-                                    <li>参加希望日程</li>
-                                    <li>緊急連絡先</li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="col-lg-10 mx-auto">
+                <!-- 忙しい人向けまとめ -->
+                <div class="section-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
+                    <h2 class="section-title" style="color: white; border-bottom: 3px solid white;">忙しい人向け 3行まとめ</h2>
+                    <div style="font-size: 1.2rem; line-height: 2;">
+                        <p style="margin-bottom: 1rem;"><strong>①</strong> <a href="https://band.us/n/afabAcPad6Nbw" target="_blank" rel="noopener" style="color: #ffeb3b; text-decoration: underline;">https://band.us/n/afabAcPad6Nbw</a> からBANDアプリをインストール</p>
+                        <p style="margin-bottom: 1rem;"><strong>②</strong> アカウント登録（電話番号・メール・Facebook・LINEから選択）</p>
+                        <p style="margin-bottom: 0;"><strong>③</strong> イベント一覧から「参加する」をタップ</p>
                     </div>
                 </div>
 
-                <div class="step-card">
-                    <div class="d-flex">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <div class="step-title">BANDアプリでの招待</div>
-                            <div class="step-description">BANDアプリを使用してメンバーを招待します</div>
-                            <div class="step-details">
-                                <h6>手順：</h6>
-                                <ol>
-                                    <li>BANDアプリを開く</li>
-                                    <li>エンバドグループにアクセス</li>
-                                    <li>「メンバー招待」をタップ</li>
-                                    <li>招待したい人の連絡先を入力</li>
-                                    <li>招待メッセージを送信</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-card">
-                    <div class="d-flex">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <div class="step-title">参加登録の確認</div>
-                            <div class="step-description">新規メンバーの参加登録を確認します</div>
-                            <div class="step-details">
-                                <h6>確認事項：</h6>
-                                <ul>
-                                    <li>BANDグループへの参加確認</li>
-                                    <li>自己紹介の投稿確認</li>
-                                    <li>初回参加予定の確認</li>
-                                    <li>ルール・マナーの理解確認</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-card">
-                    <div class="d-flex">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <div class="step-title">初回参加時のサポート</div>
-                            <div class="step-description">新規メンバーの初回参加をサポートします</div>
-                            <div class="step-details">
-                                <h6>サポート内容：</h6>
-                                <ul>
-                                    <li>会場への案内</li>
-                                    <li>必要な用具の説明</li>
-                                    <li>参加費の支払い方法説明</li>
-                                    <li>基本的なルール説明</li>
-                                    <li>既存メンバーとの紹介</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-card">
-                    <div class="d-flex">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <div class="step-title">フォローアップ</div>
-                            <div class="step-description">新規メンバーの定着をサポートします</div>
-                            <div class="step-details">
-                                <h6>フォローアップ内容：</h6>
-                                <ul>
-                                    <li>参加後の感想確認</li>
-                                    <li>次回参加予定の確認</li>
-                                    <li>質問・要望の収集</li>
-                                    <li>定期的な参加状況の確認</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="warning-box">
-                    <h5><i class="fas fa-exclamation-triangle icon"></i>注意事項</h5>
+                <!-- BANDって何? -->
+                <div class="section-card">
+                    <h2 class="section-title">BANDって何?</h2>
                     <ul>
-                        <li>新規メンバーの個人情報は適切に管理してください</li>
-                        <li>参加費の支払い方法は事前に説明してください</li>
-                        <li>安全面での配慮を忘れずに行ってください</li>
-                        <li>既存メンバーとの関係性にも配慮してください</li>
+                        <li>BANDはグループコミュニケーションを容易にするモバイルコミュニティアプリケーションです。このサービスは Naver Corporation によって作成され、iOS、Android、デスクトップで利用できます。</li>
+                        <li>日本でも、多くのサークルや学校（PTA・部活動）など様々なグループ活動で活発に利用をされています。</li>
+                        <li>BANDの資料</li>
                     </ul>
-                </div>
-
-                <div class="success-box">
-                    <h5><i class="fas fa-check-circle icon"></i>成功のポイント</h5>
-                    <ul>
-                        <li>丁寧な説明とサポートを心がける</li>
-                        <li>新規メンバーの不安を取り除く</li>
-                        <li>既存メンバーとの交流を促進する</li>
-                        <li>継続的なフォローアップを行う</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5><i class="fas fa-list icon"></i>関連リンク</h5>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a href="../qa/" class="text-decoration-none">
-                                    <i class="fas fa-question-circle text-primary"></i> よくある質問
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="../schedule/" class="text-decoration-none">
-                                    <i class="fas fa-calendar text-primary"></i> スケジュール
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="enbatminton-flow.pdf" class="text-decoration-none" target="_blank">
-                                    <i class="fas fa-file-pdf text-danger"></i> 活動フロー
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="enbatminton-rule.pdf" class="text-decoration-none" target="_blank">
-                                    <i class="fas fa-file-pdf text-danger"></i> ルール・マナー
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="link-box">
+                        <a href="https://docs.band.us/d/promotion/supportguide_jp" target="_blank" class="text-decoration-none">
+                            <i class="fas fa-external-link-alt"></i> https://docs.band.us/d/promotion/supportguide_jp
+                        </a>
                     </div>
                 </div>
 
-                <div class="card mt-3">
-                    <div class="card-header">
-                        <h5><i class="fas fa-phone icon"></i>お問い合わせ</h5>
+                <!-- 初めて登録する方 -->
+                <div class="section-card">
+                    <h2 class="section-title">初めて登録する方 (1/3)</h2>
+                    <p>新規にアカウント登録をする場合は、記載のあるURL or QRコードを読み取ります。</p>
+                    <div class="link-box">
+                        <a href="https://band.us/n/afabAcPad6Nbw" target="_blank" class="text-decoration-none">
+                            <i class="fas fa-link"></i> https://band.us/n/afabAcPad6Nbw
+                        </a>
                     </div>
-                    <div class="card-body">
-                        <p>手順について不明な点がございましたら、お気軽にお問い合わせください。</p>
-                        <a href="mailto:enbatminton@gmail.com" class="btn btn-primary btn-sm">
-                            <i class="fas fa-envelope"></i> メールで問い合わせ
+                    <div class="qr-code-image">
+                        <img src="../../images/band_qr.png" alt="BAND招待用QRコード" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 1rem auto;">
+                    </div>
+                </div>
+
+                <div class="section-card">
+                    <h2 class="section-title">初めて登録する方 (2/3)</h2>
+                    <div class="step-card">
+                        <div class="d-flex">
+                            <div class="step-number">①</div>
+                            <div class="step-content">
+                                <div class="step-title">招待用QRコードを読み取り、URLへアクセスする</div>
+                                <div class="step-description">ブラウザで以下の招待画面が表示されるため、「BANDアプリをインストールする」より、アプリを導入</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="d-flex">
+                            <div class="step-number">②</div>
+                            <div class="step-content">
+                                <div class="step-title">アプリ導入後の操作</div>
+                                <div class="step-description">アプリ導入後は、招待画面に戻り「BANDアプリで招待状を確認する」ボタンを押す（もしくは再度QRコードを読み取りする）</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qr-code-image" style="margin-top: 1.5rem;">
+                        <img src="../../images/band_manual2.png" alt="BAND招待画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
+                    </div>
+                </div>
+
+                <div class="section-card">
+                    <h2 class="section-title">初めて登録する方 (3/3)</h2>
+                    <div class="step-card">
+                        <div class="d-flex">
+                            <div class="step-number">③</div>
+                            <div class="step-content">
+                                <div class="step-title">アカウント登録</div>
+                                <div class="step-description">アプリを開くと、アカウント登録が案内される。こちら登録方法は多数あるため、任意</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="d-flex">
+                            <div class="step-number">④</div>
+                            <div class="step-content">
+                                <div class="step-title">会員登録画面</div>
+                                <div class="step-description">会員登録画面が表示される。画面の項目を入力。名前はニックネームでもOK。設定したあとで変更可能。一車線アカウントの登録対策として、電話番号更新が準備しています。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qr-code-image" style="margin-top: 1.5rem;">
+                        <img src="../../images/band_manual4.png" alt="BAND会員登録画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
+                    </div>
+                </div>
+
+                <!-- バドミントンへの参加登録 -->
+                <div class="section-card">
+                    <h2 class="section-title">バドミントンへの参加登録</h2>
+                    <div class="step-card">
+                        <div class="d-flex">
+                            <div class="step-number">①</div>
+                            <div class="step-content">
+                                <div class="step-title">近々あるイベント or 下のスケジュールアイコン選択</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qr-code-image" style="margin-top: 1.5rem;">
+                        <img src="../../images/band_manual3.png" alt="BANDイベント一覧画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
+                    </div>
+                    <div class="step-card">
+                        <div class="d-flex">
+                            <div class="step-number">②</div>
+                            <div class="step-content">
+                                <div class="step-title">参加するにチェックを入れると参加</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box" style="background: #fff3e0; border: 1px solid #ff9800; margin-top: 1rem;">
+                        <p style="margin: 0; color: #e65100;"><strong>※注意：</strong>もう一度参加ボタンを押すとキャンセルになります。</p>
+                    </div>
+                </div>
+
+                <!-- キャンセル待ちについて -->
+                <div class="section-card">
+                    <h2 class="section-title">キャンセル待ちについて</h2>
+                    <div class="info-box">
+                        <p><strong>※ 参加時の人数制限があります。人数制限を超える場合、キャンセル待ちになります。</strong></p>
+                        <p>キャンセル待ちは、キャンセルがでた場合、先頭から順番に参加になります。参加になっても通知こないため、お見逃しないようお願いします！</p>
+                    </div>
+                </div>
+
+                <!-- 便利機能① スケジュール保存 -->
+                <div class="section-card">
+                    <h2 class="section-title">便利機能① スケジュール保存</h2>
+                    <p>スケジュールの下にある予定保存ボタンを押すと、GoogleカレンダーやAppleのスケジュールに登録することが可能</p>
+                </div>
+
+                <!-- 便利機能②) リマインド・事前通知 -->
+                <div class="section-card">
+                    <h2 class="section-title">便利機能②) リマインド・事前通知</h2>
+                    <h4>事前通知設定->任意の時間を選ぶ</h4>
+                    <p>(リマインドは自分だけの通知になります)</p>
+                    <div class="qr-code-image" style="margin-top: 1.5rem;">
+                        <img src="../../images/band_remind.png" alt="BAND事前通知設定画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
+                    </div>
+                </div>
+
+                <!-- 参考情報) プロフィールの変更 -->
+                <div class="section-card">
+                    <h2 class="section-title">参考情報) プロフィールの変更</h2>
+                    <p>画面下の歯車アイコンからプロフィールの変更が可能です</p>
+                </div>
+
+                <!-- その他質問事項について -->
+                <div class="section-card">
+                    <h2 class="section-title">その他質問事項について</h2>
+                    <p>公式LINEを用意しています。不明点などあれば、こちらも活用ください。</p>
+                    <div class="link-box">
+                        <a href="https://lin.ee/1yQT1oi" target="_blank" class="text-decoration-none">
+                            <i class="fas fa-external-link-alt"></i> https://lin.ee/1yQT1oi
                         </a>
                     </div>
                 </div>

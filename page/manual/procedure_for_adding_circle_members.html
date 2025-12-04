@@ -230,6 +230,46 @@
             color: white;
             font-weight: bold;
         }
+        .quick-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1.5rem;
+        }
+        .quick-summary .section-title {
+            color: white;
+            border-bottom: 3px solid white;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        .quick-summary-content {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .quick-summary-content p {
+            margin-bottom: 0.8rem;
+            word-break: break-word;
+        }
+        .quick-summary-content a {
+            color: #ffeb3b;
+            text-decoration: underline;
+            word-break: break-all;
+        }
+        @media (max-width: 768px) {
+            .quick-summary {
+                padding: 1rem;
+            }
+            .quick-summary .section-title {
+                font-size: 1.1rem;
+            }
+            .quick-summary-content {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            .quick-summary-content p {
+                margin-bottom: 0.6rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -253,11 +293,11 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <!-- 忙しい人向けまとめ -->
-                <div class="section-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
-                    <h2 class="section-title" style="color: white; border-bottom: 3px solid white;">忙しい人向け 3行まとめ</h2>
-                    <div style="font-size: 1.2rem; line-height: 2;">
-                        <p style="margin-bottom: 1rem;"><strong>①</strong> <a href="https://band.us/n/afabAcPad6Nbw" target="_blank" rel="noopener" style="color: #ffeb3b; text-decoration: underline;">https://band.us/n/afabAcPad6Nbw</a> からBANDアプリをインストール</p>
-                        <p style="margin-bottom: 1rem;"><strong>②</strong> アカウント登録（電話番号・メール・Facebook・LINEから選択）</p>
+                <div class="section-card quick-summary">
+                    <h2 class="section-title">忙しい人向け 3行まとめ</h2>
+                    <div class="quick-summary-content">
+                        <p><strong>①</strong> <a href="https://band.us/n/afabAcPad6Nbw" target="_blank" rel="noopener">https://band.us/n/afabAcPad6Nbw</a> からBANDアプリをインストール</p>
+                        <p><strong>②</strong> アカウント登録（電話番号・メール・Facebook・LINEから選択）</p>
                         <p style="margin-bottom: 0;"><strong>③</strong> イベント一覧から「参加する」をタップ</p>
                     </div>
                 </div>

@@ -106,6 +106,12 @@
 
 <!-- Manual -->
 <url>
+  <loc>https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html</loc>
+  <priority>0.7</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2025-01-24T15:07:09+09:00</lastmod>
+</url>
+<url>
   <loc>https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.pdf</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>

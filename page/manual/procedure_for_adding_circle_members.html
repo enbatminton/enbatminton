@@ -16,6 +16,18 @@
     <meta name="language" content="ja">
     <meta name="revisit-after" content="1 month">
     
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="JP-13">
+    <meta name="geo.placename" content="東京">
+    <meta name="geo.position" content="35.6762;139.6503">
+    <meta name="ICBM" content="35.6762, 139.6503">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- Alternate Language Links -->
+    <link rel="alternate" hreflang="ja" href="https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html">
@@ -82,7 +94,41 @@
       "datePublished": "2025-01-24",
       "dateModified": "2025-01-24",
       "inLanguage": "ja",
-      "url": "https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html"
+      "url": "https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "バドミントンサークル enバドの参加方法",
+      "description": "エンバドへの参加方法を詳しく解説。BANDアプリを使った参加手順、QRコードでの登録方法、イベント参加の仕方、便利機能（スケジュール保存・リマインド）などをわかりやすく説明。",
+      "image": "https://www.enbatminton.com/images/ennbado_logo.png",
+      "author": {
+        "@type": "Organization",
+        "name": "エンバド",
+        "url": "https://www.enbatminton.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "エンバド",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.enbatminton.com/images/ennbado_logo.png"
+        }
+      },
+      "datePublished": "2025-01-24T00:00:00+09:00",
+      "dateModified": "2025-01-24T00:00:00+09:00",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.enbatminton.com/page/manual/procedure_for_adding_circle_members.html"
+      },
+      "inLanguage": "ja"
     }
     </script>
     
@@ -270,10 +316,35 @@
                 margin-bottom: 0.6rem;
             }
         }
+        .breadcrumb-nav {
+            background: #f8f9fa;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        .breadcrumb-nav a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .breadcrumb-nav a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb-nav span {
+            color: #666;
+            margin: 0 0.5rem;
+        }
     </style>
 </head>
 <body>
-    <div class="manual-header">
+    <nav aria-label="パンくずリスト" class="breadcrumb-nav">
+        <div class="container">
+            <a href="../../index.html">ホーム</a>
+            <span>/</span>
+            <span>参加方法</span>
+        </div>
+    </nav>
+    
+    <header class="manual-header" role="banner">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8">
@@ -287,24 +358,24 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="container">
+    <main role="main" class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <!-- 忙しい人向けまとめ -->
-                <div class="section-card quick-summary">
-                    <h2 class="section-title">忙しい人向け 3行まとめ</h2>
+                <section class="section-card quick-summary" aria-labelledby="quick-summary-title">
+                    <h2 class="section-title" id="quick-summary-title">忙しい人向け 3行まとめ</h2>
                     <div class="quick-summary-content">
                         <p><strong>①</strong> <a href="https://band.us/n/afabAcPad6Nbw" target="_blank" rel="noopener">https://band.us/n/afabAcPad6Nbw</a> からBANDアプリをインストール</p>
                         <p><strong>②</strong> アカウント登録（電話番号・メール・Facebook・LINEから選択）</p>
                         <p style="margin-bottom: 0;"><strong>③</strong> イベント一覧から「参加する」をタップ</p>
                     </div>
-                </div>
+                </section>
 
                 <!-- BANDって何? -->
-                <div class="section-card">
-                    <h2 class="section-title">BANDって何?</h2>
+                <section class="section-card" aria-labelledby="band-info-title">
+                    <h2 class="section-title" id="band-info-title">BANDって何?</h2>
                     <ul>
                         <li>BANDはグループコミュニケーションを容易にするモバイルコミュニティアプリケーションです。このサービスは Naver Corporation によって作成され、iOS、Android、デスクトップで利用できます。</li>
                         <li>日本でも、多くのサークルや学校（PTA・部活動）など様々なグループ活動で活発に利用をされています。</li>
@@ -318,8 +389,8 @@
                 </div>
 
                 <!-- 初めて登録する方 -->
-                <div class="section-card">
-                    <h2 class="section-title">初めて登録する方 (1/3)</h2>
+                <section class="section-card" aria-labelledby="register-1-title">
+                    <h2 class="section-title" id="register-1-title">初めて登録する方 (1/3)</h2>
                     <p>新規にアカウント登録をする場合は、記載のあるURL or QRコードを読み取ります。</p>
                     <div class="link-box">
                         <a href="https://band.us/n/afabAcPad6Nbw" target="_blank" class="text-decoration-none">
@@ -329,10 +400,10 @@
                     <div class="qr-code-image">
                         <img src="../../images/band_qr.png" alt="BAND招待用QRコード" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 1rem auto;">
                     </div>
-                </div>
+                </section>
 
-                <div class="section-card">
-                    <h2 class="section-title">初めて登録する方 (2/3)</h2>
+                <section class="section-card" aria-labelledby="register-2-title">
+                    <h2 class="section-title" id="register-2-title">初めて登録する方 (2/3)</h2>
                     <div class="step-card">
                         <div class="d-flex">
                             <div class="step-number">①</div>
@@ -354,10 +425,10 @@
                     <div class="qr-code-image" style="margin-top: 1.5rem;">
                         <img src="../../images/band_manual2.png" alt="BAND招待画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
                     </div>
-                </div>
+                </section>
 
-                <div class="section-card">
-                    <h2 class="section-title">初めて登録する方 (3/3)</h2>
+                <section class="section-card" aria-labelledby="register-3-title">
+                    <h2 class="section-title" id="register-3-title">初めて登録する方 (3/3)</h2>
                     <div class="step-card">
                         <div class="d-flex">
                             <div class="step-number">③</div>
@@ -379,11 +450,11 @@
                     <div class="qr-code-image" style="margin-top: 1.5rem;">
                         <img src="../../images/band_manual4.png" alt="BAND会員登録画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
                     </div>
-                </div>
+                </section>
 
                 <!-- バドミントンへの参加登録 -->
-                <div class="section-card">
-                    <h2 class="section-title">バドミントンへの参加登録</h2>
+                <section class="section-card" aria-labelledby="participation-title">
+                    <h2 class="section-title" id="participation-title">バドミントンへの参加登録</h2>
                     <div class="step-card">
                         <div class="d-flex">
                             <div class="step-number">①</div>
@@ -406,54 +477,65 @@
                     <div class="info-box" style="background: #fff3e0; border: 1px solid #ff9800; margin-top: 1rem;">
                         <p style="margin: 0; color: #e65100;"><strong>※注意：</strong>もう一度参加ボタンを押すとキャンセルになります。</p>
                     </div>
-                </div>
+                </section>
 
                 <!-- キャンセル待ちについて -->
-                <div class="section-card">
-                    <h2 class="section-title">キャンセル待ちについて</h2>
+                <section class="section-card" aria-labelledby="waitlist-title">
+                    <h2 class="section-title" id="waitlist-title">キャンセル待ちについて</h2>
                     <div class="info-box">
                         <p><strong>※ 参加時の人数制限があります。人数制限を超える場合、キャンセル待ちになります。</strong></p>
                         <p>キャンセル待ちは、キャンセルがでた場合、先頭から順番に参加になります。参加になっても通知こないため、お見逃しないようお願いします！</p>
                     </div>
-                </div>
+                </section>
 
                 <!-- 便利機能① スケジュール保存 -->
-                <div class="section-card">
-                    <h2 class="section-title">便利機能① スケジュール保存</h2>
+                <section class="section-card" aria-labelledby="schedule-save-title">
+                    <h2 class="section-title" id="schedule-save-title">便利機能① スケジュール保存</h2>
                     <p>スケジュールの下にある予定保存ボタンを押すと、GoogleカレンダーやAppleのスケジュールに登録することが可能</p>
-                </div>
+                </section>
 
                 <!-- 便利機能②) リマインド・事前通知 -->
-                <div class="section-card">
-                    <h2 class="section-title">便利機能②) リマインド・事前通知</h2>
+                <section class="section-card" aria-labelledby="remind-title">
+                    <h2 class="section-title" id="remind-title">便利機能②) リマインド・事前通知</h2>
                     <h4>事前通知設定->任意の時間を選ぶ</h4>
                     <p>(リマインドは自分だけの通知になります)</p>
                     <div class="qr-code-image" style="margin-top: 1.5rem;">
                         <img src="../../images/band_remind.png" alt="BAND事前通知設定画面" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 1rem auto; border: 1px solid #dee2e6; border-radius: 8px;">
                     </div>
-                </div>
+                </section>
 
                 <!-- 参考情報) プロフィールの変更 -->
-                <div class="section-card">
-                    <h2 class="section-title">参考情報) プロフィールの変更</h2>
+                <section class="section-card" aria-labelledby="profile-title">
+                    <h2 class="section-title" id="profile-title">参考情報) プロフィールの変更</h2>
                     <p>画面下の歯車アイコンからプロフィールの変更が可能です</p>
-                </div>
+                </section>
 
                 <!-- その他質問事項について -->
-                <div class="section-card">
-                    <h2 class="section-title">その他質問事項について</h2>
+                <section class="section-card" aria-labelledby="contact-title">
+                    <h2 class="section-title" id="contact-title">その他質問事項について</h2>
                     <p>公式LINEを用意しています。不明点などあれば、こちらも活用ください。</p>
                     <div class="link-box">
                         <a href="https://lin.ee/1yQT1oi" target="_blank" class="text-decoration-none">
                             <i class="fas fa-external-link-alt"></i> 公式LINEを友だち追加
                         </a>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
 
-    <a href="../qa/" class="btn btn-primary back-button">
+    <footer role="contentinfo" style="background: #f8f9fa; padding: 2rem 0; margin-top: 3rem; text-align: center;">
+        <div class="container">
+            <p style="margin: 0; color: #666;">&copy; 2024 エンバド All Rights Reserved.</p>
+            <nav aria-label="フッターナビゲーション" style="margin-top: 1rem;">
+                <a href="../../index.html" style="color: #667eea; text-decoration: none; margin: 0 1rem;">ホーム</a>
+                <a href="../qa/" style="color: #667eea; text-decoration: none; margin: 0 1rem;">よくある質問</a>
+                <a href="../schedule/" style="color: #667eea; text-decoration: none; margin: 0 1rem;">スケジュール</a>
+            </nav>
+        </div>
+    </footer>
+
+    <a href="../qa/" class="btn btn-primary back-button" aria-label="よくある質問に戻る">
         <i class="fas fa-arrow-left"></i> 戻る
     </a>
 

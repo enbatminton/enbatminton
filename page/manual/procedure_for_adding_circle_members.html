@@ -547,6 +547,203 @@
         <i class="fas fa-arrow-left"></i> 戻る
     </a>
 
+    <!-- Terms and Rules Popup -->
+    <div class="terms-popup" id="termsPopup">
+        <div class="terms-popup-overlay"></div>
+        <div class="terms-popup-content">
+            <div class="terms-popup-header">
+                <h2>📋 サークル規約・会則のご確認</h2>
+            </div>
+            <div class="terms-popup-body">
+                <p style="margin-bottom: 1rem; line-height: 1.8;">
+                    エンバドにご参加いただく前に、<strong>サークルの規約・会則</strong>をご確認ください。
+                </p>
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #667eea;">
+                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.8;">
+                        <strong>主な内容：</strong><br>
+                        • 参加費：各回800円（都度発生）<br>
+                        • 禁止事項：暴言・暴力・ハラスメント行為など<br>
+                        • 安全管理：各自の健康管理と準備運動の実施<br>
+                        • 規約違反時の対応について
+                    </p>
+                </div>
+                <p style="margin-bottom: 1.5rem;">
+                    <a href="../terms/index.html" target="_blank" style="color: #667eea; text-decoration: underline; font-weight: bold;">規約・会則の全文を確認する</a>
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn btn-primary" onclick="acceptTerms()" style="flex: 1; min-width: 150px;">
+                        規約に同意して参加する
+                    </button>
+                    <button class="btn btn-secondary" onclick="declineTerms()" style="flex: 1; min-width: 150px;">
+                        キャンセル
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Terms Popup Styles */
+        .terms-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .terms-popup.show {
+            display: flex;
+        }
+
+        .terms-popup-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+        }
+
+        .terms-popup-content {
+            position: relative;
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 4px solid #667eea;
+            animation: slideUp 0.3s ease;
+            z-index: 10001;
+        }
+
+        .terms-popup-header {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 1rem;
+        }
+
+        .terms-popup-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .terms-popup-body {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .terms-popup-body p {
+            margin-bottom: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .terms-popup-content {
+                padding: 1.5rem;
+                width: 95%;
+            }
+
+            .terms-popup-header h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+    <script>
+        // Terms Popup Management
+        function showTermsPopup() {
+            const popup = document.getElementById('termsPopup');
+            if (popup) {
+                popup.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function hideTermsPopup() {
+            const popup = document.getElementById('termsPopup');
+            if (popup) {
+                popup.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function acceptTerms() {
+            // Store acceptance in localStorage (valid for 30 days)
+            const expiryDate = new Date();
+            expiryDate.setDate(expiryDate.getDate() + 30);
+            localStorage.setItem('termsAccepted', 'true');
+            localStorage.setItem('termsAcceptedDate', expiryDate.toISOString());
+            
+            hideTermsPopup();
+        }
+
+        function declineTerms() {
+            // Show message and close
+            alert('規約への同意が必要です。参加をご希望の場合は、規約に同意してください。');
+            hideTermsPopup();
+        }
+
+        function checkTermsAcceptance() {
+            const accepted = localStorage.getItem('termsAccepted');
+            const acceptedDate = localStorage.getItem('termsAcceptedDate');
+            
+            if (!accepted || accepted !== 'true') {
+                // Show popup after a short delay
+                setTimeout(showTermsPopup, 500);
+                return;
+            }
+            
+            // Check if acceptance has expired (30 days)
+            if (acceptedDate) {
+                const expiryDate = new Date(acceptedDate);
+                const now = new Date();
+                if (now > expiryDate) {
+                    // Expired, show popup again
+                    localStorage.removeItem('termsAccepted');
+                    localStorage.removeItem('termsAcceptedDate');
+                    setTimeout(showTermsPopup, 500);
+                }
+            }
+        }
+
+        // Initialize terms popup on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            checkTermsAcceptance();
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

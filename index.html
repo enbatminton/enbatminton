@@ -179,7 +179,6 @@
         <a href="#community" class="nav-link">サークルの特徴</a>
         <a href="#join" class="nav-link">参加する</a>
         <a href="#practice" class="nav-link">初心者練習会</a>
-        <a href="#schedule" class="nav-link">スケジュール</a>
         <a href="#faq" class="nav-link">よくある質問</a>
         <a href="#contact" class="nav-link">お問い合わせ</a>
       </div>
@@ -331,33 +330,6 @@
     </div>
   </section>
 
-  <!-- Schedule Section -->
-  <section id="schedule" class="schedule-section">
-    <div class="schedule-container">
-      <h2 class="pixel-heading">新宿でバドミントンサークルを探している方へ</h2>
-      <div class="schedule-content">
-        <p class="schedule-intro">東京のバドミントンサークル「エンバド」は、新宿区を中心に新宿区、江東区、板橋区、豊島区、中野区、文京区など東京23区内の体育館で活動しています。新宿・渋谷・池袋からアクセスしやすい場所で開催しています。</p>
-        <div class="schedule-preview">
-          <div class="schedule-preview-item">
-            <div class="preview-icon">📅</div>
-            <h3>活動曜日・時間</h3>
-            <p>主に週末（土日）を中心に活動<br>朝・夕方・夜の時間帯で開催<br>平日開催もあります</p>
-          </div>
-          <div class="schedule-preview-item">
-            <div class="preview-icon">📍</div>
-            <h3>活動場所</h3>
-            <p>新宿区、江東区、板橋区、豊島区、中野区、文京区など<br>東京23区内の体育館で活動中<br>最寄り駅から徒歩圏内</p>
-          </div>
-          <div class="schedule-preview-item">
-            <div class="preview-icon">🏸</div>
-            <h3>レベル</h3>
-            <p>初心者から経験者まで幅広いレベル<br>体育の授業レベルから部活経験者まで<br>レベル分けして試合を行います</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ Section -->
   <section id="faq" class="faq-section">
     <div class="faq-container">
@@ -466,11 +438,6 @@
       trackConversion('band_participation_click', 'engagement', 'band_link', 1);
     }
 
-    // Track schedule page visits
-    function trackScheduleVisit() {
-      trackConversion('schedule_page_visit', 'navigation', 'schedule_link', 1);
-    }
-
     // Track FAQ page visits
     function trackFAQVisit() {
       trackConversion('faq_page_visit', 'navigation', 'faq_link', 1);
@@ -500,10 +467,6 @@
       // Track button clicks
       document.querySelectorAll('a[href*="band.us"]').forEach(link => {
         link.addEventListener('click', trackBANDClick);
-      });
-      
-      document.querySelectorAll('a[href*="schedule"]').forEach(link => {
-        link.addEventListener('click', trackScheduleVisit);
       });
       
       document.querySelectorAll('a[href*="qa"]').forEach(link => {

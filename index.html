@@ -176,11 +176,10 @@
         </picture>
       </div>
       <div class="nav-menu" id="navMenu">
-        <a href="#community" class="nav-link">サークルの特徴</a>
-        <a href="#join" class="nav-link">参加する</a>
-        <a href="#practice" class="nav-link">初心者練習会</a>
-        <a href="#faq" class="nav-link">よくある質問</a>
-        <a href="#contact" class="nav-link">お問い合わせ</a>
+        <a href="./page/qa/" class="nav-link">よくある質問</a>
+        <a href="./page/manual/procedure_for_adding_circle_members.html" class="nav-link">参加する</a>
+        <a href="./page/practice/" class="nav-link">初心者練習会</a>
+        <a href="./page/lecture/" class="nav-link">初心者講義</a>
       </div>
       <div class="hamburger-menu" id="hamburgerMenu">
         <span class="hamburger-line"></span>
@@ -205,177 +204,40 @@
         </div>
       </div>
       <div class="hero-actions">
-        <button class="pixel-btn primary-btn" onclick="scrollToCommunity()">サークルの特徴を見る</button>
+        <a href="./page/manual/procedure_for_adding_circle_members.html" class="pixel-btn primary-btn">参加方法を見る</a>
         <a href="https://band.us/n/afabAcPad6Nbw" class="pixel-btn" target="_blank" rel="noopener" style="background: #1b5e20; color: #fff; margin-left: 1rem;">今すぐ参加する</a>
       </div>
     </div>
   </section>
 
-  <!-- Community Section -->
-  <section id="community" class="community-section">
-    <div class="community-container">
-      <h2 class="pixel-heading">エンバドはこんなバドミントンサークル（東京・新宿が活動拠点）</h2>
-      <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem; color: #555; line-height: 1.8;">東京都内で社会人向けのバドミントンサークルを探している方に向けたサークルです。主な活動場所は新宿区を中心とした東京23区内の体育館です。新宿でバドミントンサークルを探している方、東京でバドミントンサークルを探している方におすすめの東京のバドミントンサークルです。</p>
-      <div class="community-grid">
-        <div class="community-card">
-          <div class="card-icon">🏸</div>
-          <h3>週末活動</h3>
-          <p>土日を中心に活動中<br>東京のバドミントンサークルとして、社会人の方にも参加しやすいスケジュールです</p>
+  <!-- Quick Links Section -->
+  <section class="quick-links-section" style="padding: 4rem 0; background: #f8f9fa;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+        <div class="quick-link-card" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">❓</div>
+          <h3 style="margin-bottom: 1rem; color: #333;">よくある質問</h3>
+          <p style="color: #666; margin-bottom: 1.5rem; line-height: 1.6;">活動場所、レベル、参加費、体験の流れなど、よくある質問と回答をご紹介します。</p>
+          <a href="./page/qa/" class="pixel-btn primary-btn" style="display: inline-block;">詳しく見る</a>
         </div>
-        <div class="community-card">
-          <div class="card-icon">💳</div>
-          <h3>キャッシュレス決済</h3>
-          <p>PayPay、auPay、楽天Pay対応<br><strong>参加費：800-1000円</strong></p>
+        
+        <div class="quick-link-card" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🏸</div>
+          <h3 style="margin-bottom: 1rem; color: #333;">初心者練習会</h3>
+          <p style="color: #666; margin-bottom: 1.5rem; line-height: 1.6;">バドミントン初心者の方に向けて、基礎から学べる練習会を開催しています。</p>
+          <a href="./page/practice/" class="pixel-btn primary-btn" style="display: inline-block;">詳しく見る</a>
         </div>
-        <div class="community-card">
-          <div class="card-icon">📱</div>
-          <h3>LINE公式</h3>
-          <p>最新スケジュールを配信<br>質問・相談も受付中</p>
-        </div>
-        <div class="community-card">
-          <div class="card-icon">🎯</div>
-          <h3>ポイントカード</h3>
-          <p>参加回数でポイント獲得</p>
-        </div>
-        <div class="community-card">
-          <div class="card-icon">👥</div>
-          <h3>初心者・経験者歓迎</h3>
-          <p>バドミントン未経験の方から経験者まで幅広く参加可能です。<br>東京でバドミントンサークルを探している初心者の方も安心してご参加いただけます。</p>
-        </div>
-        <div class="community-card">
-          <div class="card-icon">🏸</div>
-          <h3>レンタル対応</h3>
-          <p>ラケット・シューズのレンタル対応<br>江東区：100円、その他：無料〜500円</p>
-          <a href="./page/qa/#rental-info" class="rental-link">詳細はこちら</a>
-        </div>
-        <div class="community-card">
-          <div class="card-icon">🌍</div>
-          <h3>都内アクセス便利</h3>
-          <p>東京23区内で活動中<br>新宿・渋谷・池袋から通いやすい<br>最寄り駅から徒歩圏内の箇所が多い</p>
-        </div>
-        <div class="community-card">
-          <div class="card-icon">📚</div>
-          <h3>初心者講義</h3>
-          <p>バドミントンの基礎から学べる<br>11講義の初心者向け講義を用意</p>
-          <a href="./page/lecture/" class="rental-link">講義を見る</a>
+        
+        <div class="quick-link-card" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+          <h3 style="margin-bottom: 1rem; color: #333;">初心者講義</h3>
+          <p style="color: #666; margin-bottom: 1.5rem; line-height: 1.6;">バドミントンの基礎から学べる11講義の初心者向け講義を用意しています。</p>
+          <a href="./page/lecture/" class="pixel-btn primary-btn" style="display: inline-block;">詳しく見る</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Join Section -->
-  <section id="join" class="join-section">
-    <div class="join-container">
-      <h2 class="pixel-heading">東京でバドミントンサークルを探している方へ</h2>
-      <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem; color: #555; line-height: 1.8;">東京のバドミントンサークル「エンバド」への参加方法をご案内します。初心者の方も安心してご参加いただけます。東京でバドミントンサークルを探している社会人の方、新宿でバドミントンサークルを探している方、どなたでもお気軽にご参加ください。</p>
-      <div class="join-method">
-        <div class="join-card">
-          <h3>参加方法</h3>
-          <div class="join-steps">
-            <div class="step">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <p>スマホからBANDアプリをダウンロードしていただき、アカウント登録</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <p>予定から参加登録で完了！</p>
-                <p><small>※ラケット・シューズがない方は<a href="./page/qa/#rental-info" class="rental-link">レンタル詳細</a>をご確認の上、前日までにご連絡ください</small></p>
-              </div>
-            </div>
-          </div>
-          <div class="join-buttons">
-            <a href="https://band.us/n/afabAcPad6Nbw" class="pixel-btn" target="_blank" rel="noopener">BANDに参加する</a>
-            <a href="./page/manual/procedure_for_adding_circle_members.html" class="pixel-btn" target="_blank" rel="noopener">参加マニュアルを見る</a>
-          </div>
-          <div style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
-            <h4 style="margin-bottom: 1rem; color: #333;">体験参加について</h4>
-            <p style="margin: 0; color: #555; line-height: 1.8;">東京のバドミントンサークル「エンバド」では、体験参加も可能です。当日参加もOKですので、まずは気軽にご参加ください。持ち物は運動ができる服装、体育館シューズ、飲み物、汗拭きタオル、ラケット（レンタル可）です。詳しくは<a href="./page/qa/" style="color: #667eea; text-decoration: underline;">よくある質問</a>をご覧ください。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Practice Section -->
-  <section id="practice" class="lecture-section">
-    <div class="lecture-container">
-      <h2 class="pixel-heading">初心者向け練習会（東京のバドミントンサークル）</h2>
-      <div class="lecture-content">
-        <p class="lecture-intro">東京でバドミントンサークルを探している初心者の方に向けて、基礎から学べる練習会を開催しています。バドミントンの初心者向け練習会では、講義で学んだ基礎を実践で身につけることができます。初心者同士で楽しく練習し、経験者からのアドバイスも受けられます。</p>
-        <div style="background: #fff3cd; border: 3px solid #ffc107; border-radius: 8px; padding: 1rem; margin: 2rem 0; text-align: center;">
-          <p style="font-family: 'VT323', monospace; font-size: 1.1rem; color: #856404; margin: 0;"><strong>参加対象：</strong>バドミントン初心者であること</p>
-        </div>
-        <div class="lecture-preview">
-          <div class="lecture-preview-item">
-            <div class="preview-icon">🏸</div>
-            <h3>実践的な練習</h3>
-            <p>講義で学んだ基礎を実際にコートで練習します</p>
-          </div>
-          <div class="lecture-preview-item">
-            <div class="preview-icon">💬</div>
-            <h3>2つの練習会</h3>
-            <p>講座形式とフリースタイルの2種類の練習会があります</p>
-          </div>
-          <div class="lecture-preview-item">
-            <div class="preview-icon">👥</div>
-            <h3>初心者向け</h3>
-            <p>初心者同士で楽しく練習できる環境です</p>
-          </div>
-        </div>
-        <a href="./page/practice/" class="pixel-btn primary-btn">初心者練習会を見る</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="faq-section">
-    <div class="faq-container">
-      <h2 class="pixel-heading">東京のバドミントンサークル「エンバド」よくある質問</h2>
-      <div class="faq-content">
-        <p class="faq-intro">東京でバドミントンサークルを探している方からよくいただく質問と回答をご紹介します。活動場所、レベル、参加費、体験の流れなど、知りたい情報をまとめています。</p>
-        <div class="faq-preview">
-          <div class="faq-preview-item">
-            <div class="preview-icon">👥</div>
-            <h3>メンバー構成</h3>
-            <p>男女比6:4～7:3、年齢層は20～30代中心<br>10代から50代まで幅広く参加</p>
-          </div>
-          <div class="faq-preview-item">
-            <div class="preview-icon">🎯</div>
-            <h3>レベル</h3>
-            <p>初心者から経験者まで幅広い<br>体育の授業レベルから部活経験者まで</p>
-          </div>
-          <div class="faq-preview-item">
-            <div class="preview-icon">💰</div>
-            <h3>参加費</h3>
-            <p>800-1000円（コート代・シャトル代込み）<br>キャッシュレス決済対応</p>
-          </div>
-        </div>
-        <a href="./page/qa/" class="pixel-btn primary-btn">詳しく見る</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-container">
-      <h2 class="pixel-heading">お問い合わせ</h2>
-      <div class="contact-methods">
-        <div class="contact-method">
-          <div class="method-icon">📱</div>
-          <h3>LINE</h3>
-          <a href="https://lin.ee/s3MYFtT" class="pixel-btn" target="_blank">友だち追加</a>
-        </div>
-        <div class="contact-method">
-          <div class="method-icon">📧</div>
-          <h3>メール</h3>
-          <a href="mailto:info@enbatminton.com" class="pixel-btn">メール送信</a>
-        </div>
-      </div>
-    </div>
-  </section>
   </main>
 
   <!-- Footer -->
@@ -393,19 +255,6 @@
     <div class="floating-shuttlecock" id="shuttlecock3"></div>
   </div>
 
-  <!-- Modal for joining -->
-  <div class="modal hidden" id="joinModal">
-    <div class="modal-content">
-      <h3>参加方法</h3>
-      <p>エンバドへの参加は以下の方法でお申し込みください：</p>
-      <ul>
-        <li>LINE公式アカウントに友だち追加</li>
-        <li>参加希望の旨をお伝えください</li>
-        <li>次回の活動予定をお知らせします</li>
-      </ul>
-      <button class="pixel-btn" onclick="closeModal()">閉じる</button>
-    </div>
-  </div>
 
   <!-- Enhanced Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
@@ -448,22 +297,8 @@
       trackConversion('contact_interaction', 'engagement', method, 1);
     }
 
-    // Track scroll depth
-    function trackScrollDepth() {
-      let maxScroll = 0;
-      window.addEventListener('scroll', function() {
-        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-        if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
-          maxScroll = scrollPercent;
-          trackConversion('scroll_depth', 'engagement', scrollPercent + '%', scrollPercent);
-        }
-      });
-    }
-
     // Initialize tracking
     document.addEventListener('DOMContentLoaded', function() {
-      trackScrollDepth();
-      
       // Track button clicks
       document.querySelectorAll('a[href*="band.us"]').forEach(link => {
         link.addEventListener('click', trackBANDClick);
@@ -473,14 +308,6 @@
         link.addEventListener('click', trackFAQVisit);
       });
       
-      // Track contact method clicks
-      document.querySelectorAll('a[href*="lin.ee"]').forEach(link => {
-        link.addEventListener('click', () => trackContactInteraction('line'));
-      });
-      
-      document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
-        link.addEventListener('click', () => trackContactInteraction('email'));
-      });
     });
   </script>
 

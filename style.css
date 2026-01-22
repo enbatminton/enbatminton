@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.avatar svg,
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.links-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.link-icon {
+    font-size: 24px;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.link-content {
+    flex: 1;
+}
+
+.link-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.link-subtitle {
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+}
+
+.link-arrow {
+    font-size: 20px;
+    color: #667eea;
+    font-weight: 600;
+    margin-left: 12px;
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover .link-arrow {
+    transform: translateX(4px);
+}
+
+.schedule-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.schedule-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.schedule-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.schedule-card.highlight {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    border-color: #f39c12;
+}
+
+.schedule-date {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.schedule-time {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.schedule-location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.schedule-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #d63031;
+    margin-top: 8px;
+}
+
+.info-section {
+    margin-top: 30px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .schedule-card {
+        padding: 16px;
+    }
+
+    .schedule-date {
+        font-size: 16px;
+    }
+}

@@ -39,6 +39,22 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.enbatminton.com/">
     
+    <!-- Preload and load CSS -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Critical CSS inline for above-the-fold content -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px;display:flex;justify-content:center;align-items:center}
+        .container{max-width:600px;width:100%;background:rgba(255,255,255,0.95);border-radius:24px;padding:40px 30px;box-shadow:0 20px 60px rgba(0,0,0,0.3);backdrop-filter:blur(10px)}
+        .profile-section{text-align:center;margin-bottom:40px}
+        .avatar{width:120px;height:120px;margin:0 auto 20px;border-radius:50%;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.15)}
+        .avatar img{width:100%;height:100%;object-fit:contain}
+        .name{font-size:32px;font-weight:700;color:#1a1a1a;margin-bottom:8px;letter-spacing:-0.5px}
+        .description{font-size:16px;color:#666;font-weight:400}
+    </style>
+    
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -60,14 +76,20 @@
       "keywords": "東京,バドミントンサークル,エンバド,東京都23区,新宿区,豊島区,板橋区"
     }
     </script>
-    
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="profile-section">
             <div class="avatar">
-                <img src="images/ennbado_logo_sns_300ppi.png" alt="エンバドロゴ" />
+                <img 
+                    src="images/ennbado_logo.png" 
+                    alt="エンバドロゴ" 
+                    width="120" 
+                    height="120"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async"
+                />
             </div>
             <h1 class="name">エンバド</h1>
             <p class="description">東京都23区で活動するバドミントンサークル。<br>初心者から経験者までメンバー募集。</p>
@@ -128,9 +150,9 @@
 
     </div>
 
-    <!-- Enhanced Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
-    <script>
+    <!-- Enhanced Google Analytics 4 (deferred for better performance) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -169,8 +191,14 @@
             trackConversion('contact_interaction', 'engagement', method, 1);
         }
 
-        // Initialize tracking
-        document.addEventListener('DOMContentLoaded', function() {
+        // Initialize tracking (will run after DOM is ready)
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTracking);
+        } else {
+            initTracking();
+        }
+
+        function initTracking() {
             // Track button clicks
             document.querySelectorAll('a[href*="band.us"]').forEach(link => {
                 link.addEventListener('click', trackBANDClick);
@@ -187,7 +215,7 @@
                     trackConversion('link_card_click', 'navigation', linkTitle, 1);
                 });
             });
-        });
+        }
     </script>
 </body>
 </html>

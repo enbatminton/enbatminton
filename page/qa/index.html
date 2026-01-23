@@ -249,6 +249,92 @@
         </section>
     </div>
 
+    <!-- Enhanced Google Analytics 4 (deferred for better performance) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B0B76S4HVF', {
+            send_page_view: true,
+            page_path: window.location.pathname,
+            page_title: document.title
+        });
+
+        // Initialize tracking
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTracking);
+        } else {
+            initTracking();
+        }
+
+        function initTracking() {
+            // Track back link clicks
+            document.querySelectorAll('.back-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'navigation_click', {
+                        event_category: 'navigation',
+                        event_label: 'back_to_home',
+                        link_url: this.href
+                    });
+                });
+            });
+
+            // Track FAQ item opens
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const question = this.querySelector('.faq-question')?.textContent || 'unknown';
+                    gtag('event', 'faq_item_open', {
+                        event_category: 'engagement',
+                        event_label: question.substring(0, 50)
+                    });
+                });
+            });
+
+            // Track search usage
+            const searchInput = document.getElementById('faqSearch');
+            if (searchInput) {
+                let searchTimeout;
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    searchTimeout = setTimeout(function() {
+                        if (searchInput.value.trim().length > 0) {
+                            gtag('event', 'faq_search', {
+                                event_category: 'engagement',
+                                event_label: 'search_performed',
+                                search_term: searchInput.value.substring(0, 50)
+                            });
+                        }
+                    }, 1000);
+                });
+            }
+
+            // Track contact button clicks
+            document.querySelectorAll('.contact-button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    gtag('event', 'contact_click', {
+                        event_category: 'engagement',
+                        event_label: 'line_contact',
+                        link_url: this.href
+                    });
+                });
+            });
+
+            // Track external links
+            document.querySelectorAll('a[href^="http"]').forEach(link => {
+                if (!link.href.includes(window.location.hostname)) {
+                    link.addEventListener('click', function() {
+                        gtag('event', 'external_link_click', {
+                            event_category: 'navigation',
+                            event_label: this.href,
+                            link_text: this.textContent.trim().substring(0, 50)
+                        });
+                    });
+                }
+            });
+        }
+    </script>
+
     <script>
         // アコーディオン機能
         document.addEventListener('DOMContentLoaded', function() {

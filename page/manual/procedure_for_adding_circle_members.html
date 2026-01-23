@@ -181,9 +181,9 @@
         </section>
     </div>
 
-    <!-- Enhanced Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
-    <script>
+    <!-- Enhanced Google Analytics 4 (deferred for better performance) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-B0B76S4HVF"></script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -226,9 +226,26 @@
                 param_count: Object.keys(queryParams).length
             });
         }
-        
-        // リンククリックのトラッキング
-        document.addEventListener('DOMContentLoaded', function() {
+
+        // Initialize tracking
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTracking);
+        } else {
+            initTracking();
+        }
+
+        function initTracking() {
+            // Track back link clicks
+            document.querySelectorAll('.back-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'navigation_click', {
+                        event_category: 'navigation',
+                        event_label: 'back_to_home',
+                        link_url: this.href
+                    });
+                });
+            });
+            
             // BANDリンクのクリックをトラッキング
             document.querySelectorAll('a[href*="band.us"]').forEach(link => {
                 link.addEventListener('click', function() {
@@ -246,7 +263,7 @@
                     gtag('event', 'external_link_click', {
                         event_category: 'navigation',
                         event_label: this.href,
-                        link_text: this.textContent.trim()
+                        link_text: this.textContent.trim().substring(0, 50)
                     });
                 });
             });
@@ -261,7 +278,18 @@
                     });
                 });
             });
-        });
+
+            // Track contact button clicks
+            document.querySelectorAll('.contact-button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    gtag('event', 'contact_click', {
+                        event_category: 'engagement',
+                        event_label: 'line_contact',
+                        link_url: this.href
+                    });
+                });
+            });
+        }
     </script>
 </body>
 </html>

@@ -192,14 +192,19 @@
 .image-container {
     text-align: center;
     margin: 20px 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .image-container img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 12px;
     border: 2px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 .contact-section {
@@ -244,7 +249,7 @@ ul li {
    ============================================ */
 @media (max-width: 640px) {
     .manual-container {
-        padding: 30px 20px;
+        padding: 20px 15px;
     }
 
     .manual-header h1 {
@@ -252,10 +257,21 @@ ul li {
     }
 
     .section-card {
-        padding: 20px;
+        padding: 16px;
+        margin-bottom: 16px;
     }
 
     .step-card {
-        padding: 16px;
+        padding: 12px;
+    }
+
+    .image-container {
+        margin: 16px 0;
+    }
+
+    .image-container img {
+        border-radius: 8px;
+        max-width: 100%;
+        width: 100%;
     }
 }

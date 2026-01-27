@@ -132,6 +132,18 @@ body {
     transform: translateX(4px);
 }
 
+.line-card .line-icon {
+    background: linear-gradient(135deg, #00C300 0%, #00A000 100%);
+}
+
+.line-card:hover {
+    border-color: #00C300;
+}
+
+.line-card:hover .link-arrow {
+    color: #00C300;
+}
+
 .schedule-section {
     margin-bottom: 30px;
 }

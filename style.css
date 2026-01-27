@@ -157,6 +157,9 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
     border: 2px solid transparent;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .schedule-card:hover {

@@ -57,6 +57,14 @@
   <lastmod>2025-01-24T00:00:00+09:00</lastmod>
 </url>
 
+<!-- トーナメント -->
+<url>
+  <loc>https://www.enbatminton.com/page/tournament/index.html</loc>
+  <priority>0.7</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2025-01-24T00:00:00+09:00</lastmod>
+</url>
+
 <!-- フィード -->
 <url>
   <loc>https://www.enbatminton.com/atom.xml</loc>

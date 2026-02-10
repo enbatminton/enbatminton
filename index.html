@@ -39,6 +39,9 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.enbatminton.com/">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/ennbado_logo.png">
+    
     <!-- Preload and load CSS -->
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
@@ -78,14 +81,18 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+    <div id="main-content" class="container">
         <div class="profile-section">
+            <div class="avatar">
+                <img src="images/ennbado_logo.png" alt="エンバド ロゴ" width="120" height="120" decoding="async">
+            </div>
             <h1 class="name">エンバド</h1>
             <p class="description">東京都23区で活動するバドミントンサークル。<br>年齢問わず、初心者から経験者までメンバー募集。</p>
         </div>
 
         <div class="links-section">
-            <a href="page/qa/index.html" class="link-card">
+            <a href="page/qa/index.html" class="link-card" aria-label="よくある質問（FAQ）">
                 <div class="link-icon">❓</div>
                 <div class="link-content">
                     <div class="link-title">よくある質問</div>
@@ -93,7 +100,7 @@
                 </div>
                 <div class="link-arrow">→</div>
             </a>
-            <a href="page/manual/procedure_for_adding_circle_members.html" class="link-card">
+            <a href="page/manual/procedure_for_adding_circle_members.html" class="link-card" aria-label="参加方法 How to Join">
                 <div class="link-icon">📝</div>
                 <div class="link-content">
                     <div class="link-title">参加方法</div>
@@ -101,7 +108,7 @@
                 </div>
                 <div class="link-arrow">→</div>
             </a>
-            <a href="page/practice/index.html" class="link-card">
+            <a href="page/practice/index.html" class="link-card" aria-label="初心者練習会 Practice Session">
                 <div class="link-icon">🏸</div>
                 <div class="link-content">
                     <div class="link-title">初心者練習会</div>
@@ -109,7 +116,7 @@
                 </div>
                 <div class="link-arrow">→</div>
             </a>
-            <a href="https://lin.ee/hjYfMnn" class="link-card line-card" target="_blank" rel="noopener noreferrer">
+            <a href="https://lin.ee/hjYfMnn" class="link-card line-card" target="_blank" rel="noopener noreferrer" aria-label="LINE公式アカウント（スケジュール通知用）外部サイトへ">
                 <div class="link-icon line-icon">💬</div>
                 <div class="link-content">
                     <div class="link-title">LINE公式アカウント（スケジュール通知用）</div>
@@ -121,61 +128,47 @@
 
         <div class="schedule-section">
             <h2 class="section-title">開催スケジュール</h2>
+            <p class="schedule-period-note">2月の予定（直近5件）</p>
             <div class="schedule-cards">
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
+                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card" target="_blank" rel="noopener noreferrer" aria-label="2月11日水曜 9:00～13:00 世田谷区の予定、BANDで開く">
                     <div class="schedule-date">📅 2/11(水)</div>
                     <div class="schedule-time">9:00～13:00</div>
                     <div class="schedule-location">世田谷区</div>
                 </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card highlight">
+                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card highlight" target="_blank" rel="noopener noreferrer" aria-label="2月14日土曜 初心者向け 9:00～12:00 新宿区、BANDで開く">
                     <div class="schedule-date">📅 2/14(土) 🔰</div>
                     <div class="schedule-time">09:00～12:00</div>
                     <div class="schedule-location">新宿区</div>
                     <div class="schedule-badge">初心者向け練習会</div>
                 </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
+                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card" target="_blank" rel="noopener noreferrer" aria-label="2月14日土曜 18:00～21:30 江東区の予定、BANDで開く">
                     <div class="schedule-date">📅 2/14(土)</div>
                     <div class="schedule-time">18:00～21:30</div>
                     <div class="schedule-location">江東区</div>
                 </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
+                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card" target="_blank" rel="noopener noreferrer" aria-label="2月15日日曜 9:00～12:00 新宿区の予定、BANDで開く">
                     <div class="schedule-date">📅 2/15(日)</div>
                     <div class="schedule-time">9:00～12:00</div>
                     <div class="schedule-location">新宿区</div>
                 </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
+                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card" target="_blank" rel="noopener noreferrer" aria-label="2月15日日曜 20:15～22:15 中野区の予定、BANDで開く">
                     <div class="schedule-date">📅 2/15(日)</div>
                     <div class="schedule-time">20:15～22:15</div>
                     <div class="schedule-location">中野区</div>
                 </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
-                    <div class="schedule-date">📅 2/22(日)</div>
-                    <div class="schedule-time">9:00～12:00</div>
-                    <div class="schedule-location">新宿区</div>
-                </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
-                    <div class="schedule-date">📅 2/22(日)</div>
-                    <div class="schedule-time">19:30～22:00</div>
-                    <div class="schedule-location">新宿区</div>
-                </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
-                    <div class="schedule-date">📅 2/23(月)</div>
-                    <div class="schedule-time">18:00～21:30</div>
-                    <div class="schedule-location">豊島区</div>
-                </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
-                    <div class="schedule-date">📅 2/24(火)</div>
-                    <div class="schedule-time">18:30～21:30</div>
-                    <div class="schedule-location">北区</div>
-                </a>
-                <a href="https://band.us/n/a9abA1F63cT18" class="schedule-card">
-                    <div class="schedule-date">📅 2/25(水)</div>
-                    <div class="schedule-time">18:00～21:15</div>
-                    <div class="schedule-location">豊島区</div>
-                </a>
             </div>
+            <a href="https://band.us/n/a9abA1F63cT18" class="schedule-band-cta" target="_blank" rel="noopener noreferrer">
+                最新のスケジュール・参加申し込みは BAND で
+            </a>
         </div>
 
+        <footer class="site-footer">
+            <nav class="footer-nav" aria-label="フッターナビゲーション">
+                <a href="page/terms/index.html">利用規約・会則</a>
+                <span class="footer-sep">|</span>
+                <a href="page/terms/changes.html">規約変更のお知らせ</a>
+            </nav>
+        </footer>
     </div>
 
     <!-- Enhanced Google Analytics 4 (deferred for better performance) -->
